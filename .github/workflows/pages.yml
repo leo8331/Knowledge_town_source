@@ -1,0 +1,41 @@
+name: Publish game to GitHub Pages
+
+# 只发布仓库里已构建好的 dist/：页面路径不变、没有第三方依赖，任何人不装东西点开就能玩。
+# AI 生成、出题器、模型配置这些需要本机 Node 服务的功能在 Pages 上不可用（见 docs/DEPLOY.md）。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Skip Jekyll so every built file is published as-is
+        run: touch dist/.nojekyll
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
