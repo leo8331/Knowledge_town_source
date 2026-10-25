@@ -21,7 +21,7 @@
    try{save();}catch{}
    const dialog=$('dialog');if(dialog&&dialog.open)dialog.close();
    toast(copy('已加入「'+bank.title+'」：'+bank.cards.length+' 题','Added “'+bank.title+'”: '+bank.cards.length+' questions'));
-  }catch(error){if(hint)hint.textContent=error.message;}
+  }catch(error){if(hint)hint.textContent=error.message;else try{toast(error.message);}catch{}}
  }
  async function showPacks(){
   modal(`<span class="eyebrow">${copy('出题器题库 · 先核对再加入','Question-maker library · review before adding')}</span><h2 id="dialogTitle">${copy('从知识库出题器导入','Import from the question maker')}</h2><p id="kbPackHint">${copy('正在读取题库…','Loading packs…')}</p><div id="kbPackList"></div>`,true);
@@ -50,5 +50,8 @@
  renderHUD=function(...args){const result=hudBase.apply(this,args);try{installButton();}catch{}return result;};
  const start=()=>{try{renderHUD();}catch{}};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>{start();setTimeout(start,600);},{once:true});else start();
+ /* 工作台第四步会带 ?pack=<题库id> 进来：自动导入成课程，然后把参数从地址栏去掉，刷新不会重复导入 */
+ const wanted=(()=>{try{return new URLSearchParams(location.search||'').get('pack');}catch{return null;}})();
+ if(wanted){const run=()=>{addPack(wanted);try{if(!/pack=/.test(location.search||''))return;history.replaceState(null,'',location.pathname);}catch{}};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(run,900),{once:true});else setTimeout(run,900);}
  window.KbImport=Object.freeze({showPacks,addPack});
 })();
