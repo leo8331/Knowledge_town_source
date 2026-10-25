@@ -2,6 +2,9 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const Schema=require('../../packages/course-compiler');
 const PROJECT_ROOT=path.resolve(__dirname,'../..'),ROOT=path.join(PROJECT_ROOT,'dist'),DEFAULT_PROFILE_FILE=path.join(PROJECT_ROOT,'artifacts','runtime','model-profiles.json'),SCENE_DIR=path.join(ROOT,'generated-scenes');
+/* 根路径给门户页：别人打开网站先看到“推门进入 / 工作台 / 出题器 / 其他冒险”的入口，而不是直接掉进游戏。
+   门户缺失时回退到游戏首页，避免发布目录不完整时整站 404。 */
+const HOME_PAGE=fs.existsSync(path.join(ROOT,'portal.html'))?'portal.html':'index.html';
 const {INVENTORY_PROMPT}=require('../../packages/knowledge/prompts.cjs');
 const {PROMPT,ACTIVITY_PROMPT}=require('../../packages/learning-design/prompts.cjs');
 function configuration(env=process.env){
@@ -224,7 +227,7 @@ async function designScene(config,prompt,material,profileId,sceneWait){
   json(res,404,{error:'接口不存在。'});return;
  }
  if(!['GET','HEAD'].includes(req.method)){res.writeHead(405);res.end();return;}
- const relative=decodeURIComponent(url.pathname==='/'?'index.html':url.pathname.slice(1)),file=path.resolve(ROOT,relative);
+ const relative=decodeURIComponent(url.pathname==='/'?HOME_PAGE:url.pathname.slice(1)),file=path.resolve(ROOT,relative);
  /* 绝不通过静态服务发出密钥和内部文件：以点开头的文件/目录（.model-config.json、.search-config.json、.debug.log、.env 等），
     以及出题器的配置、服务端源码与题库缓存。出题器页面自己需要的接口走 /api/*，不需要这些文件。 */
  if(relative.split(/[\\/]/).some(part=>part.startsWith('.'))||/(^|[\\/])knowledge[\\/](server|policy|search|questions)\.cjs$/i.test(relative)||/(^|[\\/])knowledge[\\/]library[\\/]/i.test(relative)){res.writeHead(404);res.end('Not found');return;}if(!file.startsWith(ROOT+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end('Not found');return;}

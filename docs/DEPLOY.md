@@ -2,7 +2,7 @@
 
 本项目是「一个 Node 服务同时托管页面和接口」的形态：`server.cjs` 把 `dist/` 当静态目录发出去，同时提供 `/api/*`（课程生成、场景设计、图片生成、模型配置）和 `/kb/*`（知识库出题器转发）。所以只要把一个 Node 进程跑在公网上，网页和 API 就是同一个域名，前端不需要改地址。
 
-- 页面：`https://你的域名/`
+- 页面：`https://你的域名/`（门户页：推门进入 / 课程工作台 / 知识库出题器 / 其他冒险；游戏在 `/game.html`，`/index.html` 同样可用）
 - 接口：`https://你的域名/api/...`、`/kb/...`
 - 健康检查：`https://你的域名/healthz`
 
@@ -21,7 +21,7 @@
 1. 打开 <https://render.com> → 用 GitHub 登录 → **New** → **Blueprint**。
 2. 选仓库 `Abigale365/Knowledge_town`（私有仓库也可以，Render 会请求授权）。
 3. Render 读到 `render.yaml` 后点 **Apply**。首次部署约 1–3 分钟（无第三方依赖，不需要 `npm install` 之外的构建）。
-4. 部署完成后拿到 `https://knowledge-town-xxxx.onrender.com`，直接打开就是游戏首页。
+4. 部署完成后拿到 `https://knowledge-town-xxxx.onrender.com`，打开是门户页，点「推门进入」进游戏。
 5. 回到服务页 **Environment**，填三项后 **Save**（会自动重启）：
 
    | 变量 | 例子 | 说明 |
@@ -35,7 +35,7 @@
 6. 验证：
    - `https://你的域名/healthz` → `{"ok":true,"public":true}`
    - `https://你的域名/api/config` → `configured` 为 `true`
-   - 首页 → 右上角「导入知识库」→ 预览课程，能看到生成服务已连接
+   - 门户页 →「推门进入」→ 右上角「导入知识库」→ 预览课程，能看到生成服务已连接
 
 > 免费实例 15 分钟无访问会休眠，下次打开要等十几秒唤醒，这是平台行为，不是服务出错。
 
