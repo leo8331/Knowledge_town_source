@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "batch": 3,
+  "accepted": true,
+  "result": "PASS",
+  "reviewerModel": "gpt-6-astra",
+  "scope": [
+    "Domain: 19 tests plus 28 omitted-essential-operation attempts, source exercise match and bilingual boundaries",
+    "Wrapper: 8 tests plus six context mismatches, duplicate binding refusal, cumulative descriptor and disk/build consistency"
+  ],
+  "tests": {
+    "domain": 19,
+    "integration": 8,
+    "failed": 0
+  },
+  "coverage": {
+    "sourceConcepts": 29,
+    "kinds": 15,
+    "bindings": 118,
+    "uncoveredSourceConcepts": 110
+  },
+  "hashes": {
+    "engine.js": "6211be565a88db399659809b110e21c322cc830a2149a7e48ab08f3349a1475e",
+    "build.cjs": "b3e1931aa92358beded75ef3124edbb9bfde302d11015d2b773e4c008fa424ba",
+    "catalog.json": "ed2c7eb51e857e4876fabbe3616b2efc21242674e4bfa86d16ce5ad6362c993f",
+    "coverage.json": "74d3e6681a21663317405998339794f57872f7f83e394ff283ca0630f181f9ca",
+    "finance-games.js": "c21eb06efea3f712af264bfdb820a568badfb88cdcce23a81738632e70edfe4f",
+    "finance-definitions.cjs": "6414fa1828641743959ae118ebc8d6d16a63b11e6c3373b3ec1f01957e1e0af0",
+    "finance-games.test.cjs": "cc661ad6f73caae1d85f7e7b675eb34718ede31884a0ec38a2a2f1f100d0693a",
+    "governance-games.js": "6664fc1088f9c070631f8916d83a4b573aef5bc9f343f9c1cebe46a2b36fa5c3",
+    "governance-definitions.cjs": "5acd50e7befb049c70c9d86200a583f5dcda96f54a580b82f237d4c656101c48",
+    "governance-games.test.cjs": "8021b58a4da2dd6f0dcddb5a9049c4f75fdd0f3aef2a3afe883cd5487974163b",
+    "integration.test.cjs": "f21d53b8ec12c3995797d413a9caa058af4865e3c5ff7cd46dec346ebbfc8434",
+    "API.md": "ae7efdf1652cd3e357b6ee88b874f808211f4107b5ddc336629f5ac737ccd4f8"
+  },
+  "inputHashes": {
+    "aBatch2Bytes": "da7ee4ad331ec492452a7c47abccc4ed1529215d134a69722181556d7cde6c25"
+  },
+  "limits": [
+    "No actual browser/visual/touch or real storage acceptance",
+    "New renderer support must be verified before enabling a kind",
+    "Exercise completion never grants independent/formal mastery"
+  ]
+}

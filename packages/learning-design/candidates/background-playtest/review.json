@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "accepted": true,
+  "reviewerModel": "gpt-6-astra",
+  "result": "PASS-isolated-candidate",
+  "tests": "5/5 plus JSON/runtime binding checks",
+  "hashes": {
+    "evidence-lab.cjs": "e87fd31ce58eaa6807e7c7a59f1e8576541ef80e40518383f9773de06e8a9290",
+    "evidence-lab.json": "d1a372ce0395e883f182d102bec40aeddc10e9c7b5505f29c574634b42027f06"
+  },
+  "scope": "frozen knowledge/evidence, bilingual semantics, sort-then-number dependencies, wrong-answer preservation and deployment boundary",
+  "nonBlockingFinding": "First-step scenario overlaps B5 1.1-lesson-12 independent application; do not add alongside it as another mandatory task. Prefer replacing legacy supplied-order task, or consolidate existing B5 evidence activities after explicit D review.",
+  "notClaimed": [
+    "new unseen scenario for all existing learners",
+    "browser acceptance",
+    "game integration",
+    "publication"
+  ]
+}

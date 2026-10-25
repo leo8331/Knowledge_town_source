@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "type": "visual-theme-catalog",
+  "themes": [
+    {
+      "id": "knowledge-town-forest",
+      "name": "拾知小镇 · 森林探索",
+      "description": "适合连续课程、知识探索、练习与长期学习记录。",
+      "cover": "assets/world-grove.webp",
+      "preview": ["assets/world-grove.webp", "assets/world-town.webp", "assets/world-harbor.webp", "assets/world-observatory.webp"],
+      "scenes": [
+        {"id": "grove", "name": "森间学苑", "background": "assets/world-grove.webp", "thumbnail": "assets/garden-thumb.webp", "role": "learning", "supports": ["chapter", "exploration", "practice", "review"]},
+        {"id": "town", "name": "拾知小镇", "background": "assets/world-town.webp", "thumbnail": "assets/market-thumb.webp", "role": "hub", "supports": ["chapter", "exploration", "practice", "review"]},
+        {"id": "harbor", "name": "溪湾码头", "background": "assets/world-harbor.webp", "thumbnail": "assets/harbor-thumb.webp", "role": "learning", "supports": ["chapter", "exploration", "practice"]},
+        {"id": "observatory", "name": "星钟山丘", "background": "assets/world-observatory.webp", "thumbnail": "assets/tower-thumb.webp", "role": "review", "supports": ["chapter", "exploration", "review"]}
+      ],
+      "decorations": {"objects": ["assets/world-props.webp", "assets/world-props2.webp", "assets/world-props3.webp"], "people": "assets/world-people.webp", "plants": "assets/world-plants.webp"},
+      "capabilities": ["chapter-map", "knowledge-objects", "concept-games", "practice", "review-journal"]
+    },
+    {
+      "id": "knowledge-town-adventures",
+      "name": "拾知小镇 · 独立冒险",
+      "description": "适合把一组知识包装成一次有明确目标的短篇冒险。",
+      "cover": "assets/away-seaside.png",
+      "preview": ["assets/away-seaside.png", "assets/away-winter.png"],
+      "scenes": [
+        {"id": "seaside", "name": "贝壳来信湾", "background": "assets/away-seaside.png", "role": "adventure", "supports": ["adventure", "practice"]},
+        {"id": "winter", "name": "铃铛不眠街", "background": "assets/away-winter.png", "role": "adventure", "supports": ["adventure", "practice"]}
+      ],
+      "decorations": {},
+      "capabilities": ["short-adventure", "collecting", "guided-practice"]
+    }
+  ]
+}

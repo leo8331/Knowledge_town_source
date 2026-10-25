@@ -48,7 +48,7 @@ const plan = await designLearning(pack, {design: createAibDesignAdapter(), signa
 
 运行 `node packages/learning-design/generate-aib-v3.cjs --reviewed` 重建已审阅产物；不带参数仅在artifacts下生成候选。修改来源或候选会因审阅哈希失配拒绝发布，需重新逐项审阅。`createAibDesignAdapter({revision:3})` 只接受增强后的知识快照；原revision1调用保持兼容，不会把A1直接混入A3教案。
 
-最新输出为 generated/aib-{blueprint,learning-plan,course,manifest}.v3.json：38节、144卡/轮/正式题、七类操作。增加的5次补学来自A3先修关系，独立知识仍139条、目标58项。旧v1输出保留用于追溯，不能跨版本拼接。使用游戏“导入知识库”→“预览完整课程（修订3）”，或选择最新aib-course.v3.json。具体整合来源与验收见根docs/INTEGRATION.md。
+最新输出为 generated/aib-{blueprint,learning-plan,course,manifest}.v3.json：38节、144卡/轮/正式题、七类操作。增加的5次补学来自A3先修关系，独立知识仍139条、目标58项。旧v1输出保留用于追溯，不能跨版本拼接。使用游戏“导入知识库”→“预览完整课程（修订3）”，或选择最新aib-course.v3.json。具体整合来源与验收见 archive/history/INTEGRATION-history.md。
 
 ## B revision 4：差异化活动及C交接
 

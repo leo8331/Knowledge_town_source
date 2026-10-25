@@ -1,0 +1,21 @@
+(function(root,factory){const api=factory(typeof module==='object'?require('../staging/engine.js'):root.ConceptGamesNext,typeof module==='object'?require('./finance-games.js'):root.ConceptFinanceGames,typeof module==='object'?require('./governance-games.js'):root.ConceptGovernanceGames,typeof module==='object'?require('../engine.js'):root.ConceptGames);if(typeof module==='object')module.exports=api;else root.ConceptGamesThird=api;})(typeof globalThis==='undefined'?this:globalThis,function(base,methods,workshops,core){
+'use strict';
+if(!base||!methods||!workshops)throw Error('Concept-game extension dependencies missing');
+const copy=x=>JSON.parse(JSON.stringify(x)),L=(zh,en)=>({zh,en}),native=base.kinds;
+const kinds=[...native,...methods.kinds,...workshops.kinds];
+function contextShape(c){return Object.fromEntries(['courseId','courseHash','lessonId','sourceUnitId','lessonHash','knowledgeHash'].map(k=>[k,c?.[k]]));}
+function plugin(d){return methods.kinds.includes(d.kind)?methods:workshops.kinds.includes(d.kind)?workshops:null;}
+function resolve(catalog,c){if(!Array.isArray(catalog?.games))return null;const candidates=catalog.games.filter(d=>d.knowledge?.hash===c?.knowledgeHash&&d.bindings?.some(b=>['courseId','courseHash','lessonId','sourceUnitId','lessonHash'].every(k=>b[k]===c?.[k])));const d=core.resolve({...catalog,games:candidates},c);return d&&kinds.includes(d.kind)?d:null;}
+function fresh(d,c){if(native.includes(d.kind))return base.fresh(d,c);if(!resolve({schemaVersion:1,games:[d]},c)||!plugin(d))throw Error('Concept-game knowledge/course binding differs');return {schemaVersion:1,engineFamily:'concept-games-extension-2',gameId:d.id,gameSignature:d.signature,contextSignature:base.fingerprint(contextShape(c)),phase:'teaching',events:[],feedback:[],passed:false,assisted:false,data:plugin(d).init(d)};}
+function apply(d,state,a){if(!a||typeof a.type!=='string')throw Error('Unknown concept-game action');const n=copy(state);n.events.push(copy(a));n.feedback=[];
+ if(a.type==='acknowledge'){if(n.phase==='teaching')n.phase='playing';return n;}
+ if(n.phase==='teaching'){n.feedback=[{itemId:'teaching',correct:false,message:L('先查看概念和目标，再操作本题。','Review the concept and goal before operating this game.'),knowledgeIds:d.sourceUnits.map(u=>u.unitId)}];return n;}
+ const r=plugin(d).step(d,n.data,a);if(!r||!r.data||!Array.isArray(r.feedback)||typeof r.passed!=='boolean')throw Error('Invalid concept-game plugin result');n.data=copy(r.data);n.feedback=r.feedback.map(f=>({...copy(f),knowledgeIds:f.knowledgeIds||d.sourceUnits.map(u=>u.unitId)}));if(n.feedback.some(f=>!f.correct))n.assisted=true;n.passed=n.passed||r.passed;if(n.passed)n.phase='passed';return n;
+}
+function restore(d,c,text){if(native.includes(d.kind))return base.restore(d,c,text);const saved=typeof text==='string'?JSON.parse(text):copy(text),initial=fresh(d,c);if(saved?.schemaVersion!==1||saved.engineFamily!==initial.engineFamily||saved.gameId!==d.id||saved.gameSignature!==d.signature||saved.contextSignature!==initial.contextSignature||!Array.isArray(saved.events)||saved.events.length>200)throw Error('Incompatible concept-game progress');let expected=initial;for(const a of saved.events)expected=apply(d,expected,a);if(base.fingerprint(expected)!==base.fingerprint(saved)||JSON.stringify(sort(expected))!==JSON.stringify(sort(saved)))throw Error('Concept-game progress differs from replay');return expected;}
+function sort(x){return Array.isArray(x)?x.map(sort):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,sort(x[k])])):x;}
+function dispatch(d,c,s,a){if(native.includes(d.kind))return base.dispatch(d,c,s,a);const state=restore(d,c,s);if(state.events.length>=200)throw Error('Exercise log limit reached');return apply(d,state,a);}
+function validate(d,c,s){try{restore(d,c,s);return true;}catch{return false;}}
+function collection(d,c,s,{found=false,alreadyCollected=false}={}){const valid=validate(d,c,s);return {canNewCollect:found===true&&valid&&s.passed===true,preserveExisting:alreadyCollected===true,reason:!found?'find-object-first':!valid?'incompatible-progress':!s.passed?'complete-concept-game-first':'concept-game-complete',formalMastery:false};}
+return {...base,kinds,resolve,fresh,dispatch,restore,validate,collection};
+});

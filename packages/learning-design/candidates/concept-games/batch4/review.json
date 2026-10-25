@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "batch": 4,
+  "accepted": true,
+  "result": "PASS",
+  "reviewerModel": "gpt-6-astra",
+  "scope": [
+    "29 domain tests plus 288 budget configurations, 16 evidence subsets, 512 workflow stage configurations, removal of 13 required probes and 21 wrong settings",
+    "8 integration tests plus all six context mismatches, duplicate binding refusal, old 29 descriptor/state compatibility and disk/build consistency"
+  ],
+  "tests": {
+    "domain": 29,
+    "integration": 8,
+    "failed": 0
+  },
+  "coverage": {
+    "sourceConcepts": 40,
+    "kinds": 20,
+    "bindings": 162,
+    "uncoveredSourceConcepts": 99
+  },
+  "hashes": {
+    "engine.js": "5d5138eaccf1c4bdc0c062dc70fe6cdd450bad7e73bd0acc5f42a0128d93dc3e",
+    "build.cjs": "91e3139f12bbe150b4f2db69dda150593e650f5ad3d8953a6d643744c5acb81c",
+    "catalog.json": "0119ec866c0bf735a3691575c8b83275e77725f92c4b7e6e0cb3e370d2e1f236",
+    "coverage.json": "e6788692a4808d09d6107596075c0f66b089ab54c86073c5228424bb52f58d7f",
+    "budget-games.js": "eb78c1aed141292574fdf6c213a280ef43c538aafe8e810e625308a14ef7d756",
+    "budget-definitions.cjs": "c1810b25b2b62c5e02d2394477b8771f1583b49a2584ba12360e461c8a5b3c56",
+    "workflow-games.js": "27e291b98cc4a9529dd29645308312b46e6a566241bdafd232acbd66d34b3763",
+    "workflow-definitions.cjs": "7f93a44a47b107ae2e4bb048c20a744814b6d56c204f94dd783f1cd20946a6c5",
+    "monitoring-games.js": "28017a306949b89f6bd74cae27ffbabd912d27c539d63222ba7a5eaf1b2cc541",
+    "monitoring-definitions.cjs": "2c4c932c3f52b45b843f51edf888bbe3d5280478a3d81d7bb4b4af1a1bf08288",
+    "budget-games.test.cjs": "0ad8bdd5f15ff620b362c36f99b1056f205722585fd1b4ce7b0691b9c68e9215",
+    "workflow-games.test.cjs": "8d5ded873e3c4b3f02c85ccdb3f15ab25ed0bb627b0e41a23598a888ac079ee0",
+    "monitoring-games.test.cjs": "8223e5c6b2bdb9cb9c84488ce6150c00c732f9611bc5b7092594bb2db58b536b",
+    "integration.test.cjs": "5cd7f484aafcb864c853b6312a144d8abe29624d1a49de44c0b77d5883af3899",
+    "API.md": "f835fe1e08e727e18dbb435ba963078173d67f94e50d133bd04854fd77ba7c4a"
+  },
+  "limits": [
+    "No real browser/visual/touch or host storage acceptance",
+    "Enable only explicitly supported renderers",
+    "Practice completion is not independent/formal mastery"
+  ]
+}

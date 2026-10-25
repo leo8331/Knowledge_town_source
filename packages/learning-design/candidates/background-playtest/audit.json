@@ -1,0 +1,26 @@
+{
+  "scope": "structural scan of all B5 unique units and old core rounds; semantic follow-up limited to listed findings",
+  "b5UniqueUnits": 139,
+  "b5UniqueRounds": 148,
+  "oldCoreRounds": 8,
+  "stringAnswerFields": 0,
+  "missingLearnerGoals": 0,
+  "manualFindings": [
+    {
+      "id": "legacy/assemble-independent-check",
+      "fact": "Prompt states reserve, fit, evaluate in exactly the required order.",
+      "decision": "candidate replaces copied order with evidence-boundary inspection and calculation"
+    },
+    {
+      "id": "b5/1.1-lesson-13",
+      "fact": "Binary sort cards already say training or not supplied to training; primarily a basic check.",
+      "decision": "candidate adds use-log and context conflict plus separate numerical evidence; existing B5 left frozen"
+    },
+    {
+      "id": "legacy/calculate-verified-consequences",
+      "fact": "First numerical answer 3 is explicitly supplied as verified quantity; second field needs subtraction.",
+      "decision": "defer; B5 counterpart already requires deduplication and shortage calculation; no additional replacement this round"
+    }
+  ],
+  "artifactHash": "5c57efc59c107eec6c4ff544cf4ff6ed57224772992b75123f7d8ec439bfb784"
+}

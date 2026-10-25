@@ -1,0 +1,21 @@
+# 打包镜像时排除：版本库、本机产物、明文密钥
+.git
+.gitignore
+.claude
+.codex
+.hooks
+node_modules
+artifacts
+research
+archive
+**/*.log
+*.zip
+.env
+.env.*
+!.env.example
+
+# 明文密钥与本机运行时数据，绝不打进镜像
+dist/knowledge/.model-config.json
+dist/knowledge/.search-config.json
+dist/knowledge/library
+dist/generated-scenes

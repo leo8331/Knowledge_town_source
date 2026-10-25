@@ -1,0 +1,15 @@
+/* Local original-paint motion; no hit targets and no background-wide warping. */
+#landmarkMotion{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.landmark-motion{display:block;width:100%;height:100%;overflow:hidden;pointer-events:none}
+.landmark-motion *{pointer-events:none}
+.landmark-current{stroke:#efffff;stroke-linecap:round;opacity:.78;animation:landmark-fall var(--flow-time) linear infinite}
+.landmark-splash{stroke:#e5ffff;stroke-width:1.6;transform-box:fill-box;transform-origin:center;animation:landmark-splash 1.8s ease-out var(--splash-delay) infinite}
+.landmark-wheel-turn{transform-origin:0 0;animation:landmark-wheel 12s linear infinite}
+.landmark-flower{transform-box:fill-box;animation:landmark-sway var(--sway-time) ease-in-out var(--sway-delay) infinite alternate}
+@keyframes landmark-fall{to{stroke-dashoffset:-180}}
+@keyframes landmark-wheel{to{transform:rotate(360deg)}}
+@keyframes landmark-sway{from{transform:rotate(-2.2deg) skewX(-1deg)}to{transform:rotate(2.2deg) skewX(1deg)}}
+@keyframes landmark-splash{0%{opacity:.8;transform:scale(.65)}100%{opacity:0;transform:scale(1.5)}}
+body.dialog-open #landmarkMotion *,body.away-open #landmarkMotion *{animation-play-state:paused!important}
+body.away-open #landmarkMotion{visibility:hidden}
+@media(prefers-reduced-motion:reduce){#landmarkMotion{display:none}}

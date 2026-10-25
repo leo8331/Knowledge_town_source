@@ -14,6 +14,19 @@ node server.cjs
 
 打开 http://127.0.0.1:8766/ 。第一次进入会出现游戏指导；顶部“玩法指南”可随时重开。
 
+## 放到公网（网页访问 + 保留 API）
+
+同一个 Node 进程既发页面又发接口，上线后网页、`/api/*`、`/kb/*` 都在一个域名下：
+
+```sh
+# 任意 Docker 平台 / 自己的服务器
+docker build -t knowledge-town .
+docker run -d -p 8080:8080 -e TOWN_PUBLIC=1 \
+  -e API_BASE_URL=... -e API_MODEL=... -e API_KEY=... knowledge-town
+```
+
+Render 可直接用仓库根目录的 `render.yaml` 蓝图建服务。不设 `TOWN_PUBLIC=1` 时服务仍只服务本机；公网模式对花钱的接口按 IP 限额。完整步骤、环境变量、持久化与排错见[在线部署说明](docs/DEPLOY.md)。
+
 ## 现在可以玩什么
 
 | 内容 | 入口 | 状态 |
@@ -28,7 +41,7 @@ node server.cjs
 
 本地版已集成物件小游戏：找到知识物件后，以规则实验、参数操作、证据判断、样本拟合、分组等不同玩法加深理解，再手动收藏。已审范围为23个不同源知识单元、11类控件，包含原课程1.1的22项；不代表全部139项或任意导入教材都有小游戏。双击原“开始游戏.cmd”，已有8782页面按F5加载本次更新；实际验收范围见[本轮集成报告](flow/tasks/D-six-hour-integration.report.md)。
 
-课程生成先建立知识库、核对来源与缺口，再生成游戏章节，详见[知识与交互设计](docs/KNOWLEDGE_DESIGN.md)。
+课程生成先建立知识库、核对来源与缺口，再生成游戏章节，详见[玩法与知识设计](docs/GAME_GUIDE.md#知识与交互设计)。
 
 ## 仓库怎么找
 
@@ -73,7 +86,7 @@ node scripts/test-current.cjs
 
 `npm run build` 将模块源码发布到原 dist 路径，不清空素材；`node scripts/test-current.cjs` 验收模块、原入口、存档和经典游戏。C 使用 `node scripts/build-game.cjs --out artifacts/previews/game-C` 与 `node scripts/preview-game.cjs --dir artifacts/previews/game-C --port 8773` 独立预览。
 
-历史课程版本边界见 [集成说明](docs/INTEGRATION.md)，本轮进度见上方D报告。保留原四个 HTML 入口、旧存档及三个经典游戏；切换语言保留当前操作，海边与圣诞机关可查看条件、按阶段操作。
+历史课程版本边界见 [集成说明（归档）](archive/history/INTEGRATION-history.md)，本轮进度见上方D报告。保留原四个 HTML 入口、旧存档及三个经典游戏；切换语言保留当前操作，海边与圣诞机关可查看条件、按阶段操作。
 
 ### Windows 一键启动
 

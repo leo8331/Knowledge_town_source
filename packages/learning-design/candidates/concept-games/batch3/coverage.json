@@ -1,0 +1,5184 @@
+{
+  "schemaVersion": 1,
+  "batch": 3,
+  "knowledgeHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+  "sourceConceptsCovered": [
+    "1.1-lesson-1",
+    "1.2.1-unit-1",
+    "1.1-lesson-3",
+    "1.1-lesson-4",
+    "1.1-lesson-6",
+    "1.1-lesson-7",
+    "1.1-lesson-8",
+    "1.1-lesson-12",
+    "1.1-lesson-13",
+    "1.1-lesson-14",
+    "1.1-lesson-15",
+    "1.1-lesson-16",
+    "1.1-lesson-17",
+    "1.1-lesson-20",
+    "1.1-lesson-21",
+    "1.1-lesson-22",
+    "1.1-lesson-2",
+    "1.1-lesson-5",
+    "1.1-lesson-9",
+    "1.1-lesson-11",
+    "1.1-lesson-10",
+    "1.1-lesson-18",
+    "1.1-lesson-19",
+    "2.2.3-unit-1",
+    "2.2.5-unit-1",
+    "3.2.3-unit-1",
+    "4.4.5-unit-1",
+    "3.3.4-unit-1",
+    "4.4.2-unit-1"
+  ],
+  "courses": [
+    {
+      "name": "B4-aib",
+      "courseId": "course-2iajim",
+      "courseHash": "7560539a241e2676fe1ced373aa74f80a192ec9a31a9c5ec27baa5a131a084b4",
+      "chapters": [
+        {
+          "id": "1",
+          "sections": [
+            {
+              "id": "1.1",
+              "lessons": [
+                {
+                  "lessonId": "1.1-lesson-1",
+                  "sourceUnitId": "1.1-lesson-6",
+                  "title": "人工智能 AI",
+                  "covered": true,
+                  "gameId": "evidence-6",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-2",
+                  "sourceUnitId": "1.1-lesson-7",
+                  "title": "机器学习 ML",
+                  "covered": true,
+                  "gameId": "evidence-7",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-3",
+                  "sourceUnitId": "1.1-lesson-1",
+                  "title": "算法 Algorithm",
+                  "covered": true,
+                  "gameId": "algorithm-rule",
+                  "kind": "rule-runner"
+                },
+                {
+                  "lessonId": "1.1-lesson-4",
+                  "sourceUnitId": "1.1-lesson-2",
+                  "title": "模型 Model",
+                  "covered": true,
+                  "gameId": "concept-workshop-2",
+                  "kind": "model-flow"
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "lessons": [
+                {
+                  "lessonId": "1.2-lesson-1",
+                  "sourceUnitId": "1.1-lesson-17",
+                  "title": "神经网络",
+                  "covered": true,
+                  "gameId": "evidence-17",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.2-lesson-2",
+                  "sourceUnitId": "1.1-lesson-16",
+                  "title": "深度学习 DL",
+                  "covered": true,
+                  "gameId": "evidence-16",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.2-lesson-3",
+                  "sourceUnitId": "1.1-lesson-18",
+                  "title": "自然语言处理 NLP",
+                  "covered": true,
+                  "gameId": "concept-workshop-18",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.2-lesson-4",
+                  "sourceUnitId": "1.1-lesson-19",
+                  "title": "计算机视觉 CV",
+                  "covered": true,
+                  "gameId": "concept-workshop-19",
+                  "kind": "image-inspector"
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "lessons": [
+                {
+                  "lessonId": "1.3-lesson-1",
+                  "sourceUnitId": "1.1-lesson-8",
+                  "title": "生成式人工智能 GenAI",
+                  "covered": true,
+                  "gameId": "evidence-8",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.3-lesson-2",
+                  "sourceUnitId": "1.1-lesson-3",
+                  "title": "训练 Training",
+                  "covered": true,
+                  "gameId": "training-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.3-lesson-3",
+                  "sourceUnitId": "1.1-lesson-4",
+                  "title": "推理 Inference",
+                  "covered": true,
+                  "gameId": "inference-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.3-lesson-4",
+                  "sourceUnitId": "1.1-lesson-5",
+                  "title": "预测 Prediction",
+                  "covered": true,
+                  "gameId": "concept-workshop-5",
+                  "kind": "inventory-sim"
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "lessons": [
+                {
+                  "lessonId": "1.4-lesson-1",
+                  "sourceUnitId": "1.1-lesson-20",
+                  "title": "监督学习",
+                  "covered": true,
+                  "gameId": "supervised-sample-trainer",
+                  "kind": "sample-trainer"
+                },
+                {
+                  "lessonId": "1.4-lesson-2",
+                  "sourceUnitId": "1.1-lesson-21",
+                  "title": "无监督学习",
+                  "covered": true,
+                  "gameId": "unlabeled-cluster-builder",
+                  "kind": "cluster-builder"
+                },
+                {
+                  "lessonId": "1.4-lesson-3",
+                  "sourceUnitId": "1.1-lesson-22",
+                  "title": "强化学习",
+                  "covered": true,
+                  "gameId": "delayed-reward-path",
+                  "kind": "reward-path"
+                },
+                {
+                  "lessonId": "1.4-lesson-4",
+                  "sourceUnitId": "1.1-lesson-9",
+                  "title": "结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-9",
+                  "kind": "data-cleaner"
+                }
+              ]
+            },
+            {
+              "id": "1.5",
+              "lessons": [
+                {
+                  "lessonId": "1.5-lesson-1",
+                  "sourceUnitId": "1.1-lesson-10",
+                  "title": "非结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-10",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.5-lesson-2",
+                  "sourceUnitId": "1.1-lesson-11",
+                  "title": "数据质量",
+                  "covered": true,
+                  "gameId": "concept-workshop-11",
+                  "kind": "data-cleaner"
+                },
+                {
+                  "lessonId": "1.5-lesson-3",
+                  "sourceUnitId": "1.1-lesson-12",
+                  "title": "历史数据与泛化",
+                  "covered": true,
+                  "gameId": "evidence-12",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.5-lesson-4",
+                  "sourceUnitId": "1.1-lesson-13",
+                  "title": "训练集与验证",
+                  "covered": true,
+                  "gameId": "evidence-13",
+                  "kind": "evidence-board"
+                }
+              ]
+            },
+            {
+              "id": "1.6",
+              "lessons": [
+                {
+                  "lessonId": "1.6-lesson-1",
+                  "sourceUnitId": "1.1-lesson-14",
+                  "title": "AI框架与统一词汇",
+                  "covered": true,
+                  "gameId": "evidence-14",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.6-lesson-2",
+                  "sourceUnitId": "1.1-lesson-15",
+                  "title": "ISO框架意识",
+                  "covered": true,
+                  "gameId": "evidence-15",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.6-lesson-3",
+                  "sourceUnitId": "1.2-lesson-1",
+                  "title": "规则还是学习型AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.6-lesson-4",
+                  "sourceUnitId": "1.2-lesson-2",
+                  "title": "AI代理与工具",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.7",
+              "lessons": [
+                {
+                  "lessonId": "1.7-lesson-1",
+                  "sourceUnitId": "1.2-lesson-3",
+                  "title": "代理协作与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.7-lesson-2",
+                  "sourceUnitId": "1.2-lesson-4",
+                  "title": "模型漂移与持续监测",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.7-lesson-3",
+                  "sourceUnitId": "1.2-lesson-5",
+                  "title": "工具分类与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.7-lesson-4",
+                  "sourceUnitId": "1.2.1-unit-1",
+                  "title": "确定性与可重复执行",
+                  "covered": true,
+                  "gameId": "deterministic-replay",
+                  "kind": "rule-runner"
+                }
+              ]
+            },
+            {
+              "id": "1.8",
+              "lessons": [
+                {
+                  "lessonId": "1.8-lesson-1",
+                  "sourceUnitId": "1.2.1-unit-2",
+                  "title": "预测、生成与行动的边界",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.8-lesson-2",
+                  "sourceUnitId": "1.2.2-unit-1",
+                  "title": "自主性与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.8-lesson-3",
+                  "sourceUnitId": "1.2.2-unit-2",
+                  "title": "工具契约与最小行动权限",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.8-lesson-4",
+                  "sourceUnitId": "1.2.2-unit-3",
+                  "title": "交接与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.9",
+              "lessons": [
+                {
+                  "lessonId": "1.9-lesson-1",
+                  "sourceUnitId": "1.2.3-unit-1",
+                  "title": "数据漂移与概念漂移",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.9-lesson-2",
+                  "sourceUnitId": "1.2.3-unit-2",
+                  "title": "监测基线与反馈闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.9-lesson-3",
+                  "sourceUnitId": "1.2.4-unit-1",
+                  "title": "工具分级与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.9-lesson-4",
+                  "sourceUnitId": "1.3-lesson-1",
+                  "title": "提示工程",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.10",
+              "lessons": [
+                {
+                  "lessonId": "1.10-lesson-1",
+                  "sourceUnitId": "1.3-lesson-2",
+                  "title": "词元与上下文窗口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.10-lesson-2",
+                  "sourceUnitId": "1.3-lesson-3",
+                  "title": "检索增强生成 RAG",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.10-lesson-3",
+                  "sourceUnitId": "1.3-lesson-4",
+                  "title": "微调 Fine-tuning",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.10-lesson-4",
+                  "sourceUnitId": "1.3.1-unit-1",
+                  "title": "任务、上下文、约束与格式",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.11",
+              "lessons": [
+                {
+                  "lessonId": "1.11-lesson-1",
+                  "sourceUnitId": "1.3.1-unit-2",
+                  "title": "代表性样例与提示版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.11-lesson-2",
+                  "sourceUnitId": "1.3.2-unit-1",
+                  "title": "输入与输出共享预算",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.11-lesson-3",
+                  "sourceUnitId": "1.3.2-unit-2",
+                  "title": "相关性与信息位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.11-lesson-4",
+                  "sourceUnitId": "1.3.3-unit-1",
+                  "title": "RAG的检索与生成两道关",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.12",
+              "lessons": [
+                {
+                  "lessonId": "1.12-lesson-1",
+                  "sourceUnitId": "1.3.3-unit-2",
+                  "title": "微调与外部知识更新",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "sections": [
+            {
+              "id": "2.1",
+              "lessons": [
+                {
+                  "lessonId": "2.1-lesson-1",
+                  "sourceUnitId": "2.1-lesson-1",
+                  "title": "从业务问题到用例",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-2",
+                  "sourceUnitId": "2.1-lesson-2",
+                  "title": "自建、购买或合作",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-3",
+                  "sourceUnitId": "2.1.1-unit-1",
+                  "title": "问题、受益者与可观测结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-4",
+                  "sourceUnitId": "2.1-lesson-3",
+                  "title": "项目优先级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "lessons": [
+                {
+                  "lessonId": "2.2-lesson-1",
+                  "sourceUnitId": "2.1-lesson-4",
+                  "title": "什么时候不该用AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-2",
+                  "sourceUnitId": "2.1-lesson-5",
+                  "title": "迁移与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-3",
+                  "sourceUnitId": "2.1.2-unit-1",
+                  "title": "自建、购买与合作的比较维度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-4",
+                  "sourceUnitId": "2.1.3-unit-1",
+                  "title": "价值、可行性与硬性约束",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "lessons": [
+                {
+                  "lessonId": "2.3-lesson-1",
+                  "sourceUnitId": "2.1.4-unit-1",
+                  "title": "不使用AI也是方案",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-2",
+                  "sourceUnitId": "2.1.5-unit-1",
+                  "title": "切换、回退与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-3",
+                  "sourceUnitId": "2.2-lesson-1",
+                  "title": "有形与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-4",
+                  "sourceUnitId": "2.2-lesson-2",
+                  "title": "业务基线",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "lessons": [
+                {
+                  "lessonId": "2.4-lesson-1",
+                  "sourceUnitId": "2.2.3-unit-2",
+                  "title": "释放产能与现金节省",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.4-lesson-2",
+                  "sourceUnitId": "2.2.5-unit-1",
+                  "title": "全生命周期成本",
+                  "covered": true,
+                  "gameId": "volume-unit-cost-lab",
+                  "kind": "volume-simulator"
+                },
+                {
+                  "lessonId": "2.4-lesson-3",
+                  "sourceUnitId": "2.2-lesson-3",
+                  "title": "收益与ROI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.4-lesson-4",
+                  "sourceUnitId": "2.2-lesson-4",
+                  "title": "先导性指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "lessons": [
+                {
+                  "lessonId": "2.5-lesson-1",
+                  "sourceUnitId": "2.2-lesson-5",
+                  "title": "成本规划与优化",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.5-lesson-2",
+                  "sourceUnitId": "2.2.1-unit-1",
+                  "title": "结果指标与活动指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.5-lesson-3",
+                  "sourceUnitId": "2.2.1-unit-2",
+                  "title": "有形收益与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.5-lesson-4",
+                  "sourceUnitId": "2.2.2-unit-1",
+                  "title": "可比较基线与归因",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.6",
+              "lessons": [
+                {
+                  "lessonId": "2.6-lesson-1",
+                  "sourceUnitId": "2.2.3-unit-1",
+                  "title": "ROI公式与核算边界",
+                  "covered": true,
+                  "gameId": "cash-roi-ledger",
+                  "kind": "cost-ledger"
+                },
+                {
+                  "lessonId": "2.6-lesson-2",
+                  "sourceUnitId": "2.2.4-unit-1",
+                  "title": "先导信号与滞后结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.6-lesson-3",
+                  "sourceUnitId": "2.3-lesson-1",
+                  "title": "竞争格局",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.6-lesson-4",
+                  "sourceUnitId": "2.3-lesson-2",
+                  "title": "业务模式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.7",
+              "lessons": [
+                {
+                  "lessonId": "2.7-lesson-1",
+                  "sourceUnitId": "2.3-lesson-3",
+                  "title": "可持续优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.7-lesson-2",
+                  "sourceUnitId": "2.3-lesson-4",
+                  "title": "投资与成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.7-lesson-3",
+                  "sourceUnitId": "2.3.1-unit-1",
+                  "title": "客户问题与竞争位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.7-lesson-4",
+                  "sourceUnitId": "2.3.2-unit-1",
+                  "title": "价值主张、交付与收益逻辑",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.8",
+              "lessons": [
+                {
+                  "lessonId": "2.8-lesson-1",
+                  "sourceUnitId": "2.3.3-unit-1",
+                  "title": "互补能力与学习闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.8-lesson-2",
+                  "sourceUnitId": "2.3.4-unit-1",
+                  "title": "分阶段承诺与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "sections": [
+            {
+              "id": "3.1",
+              "lessons": [
+                {
+                  "lessonId": "3.1-lesson-1",
+                  "sourceUnitId": "3.1-lesson-1",
+                  "title": "负责任的AI原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-2",
+                  "sourceUnitId": "3.1.1-unit-1",
+                  "title": "公平性与分组表现",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-3",
+                  "sourceUnitId": "3.1.1-unit-3",
+                  "title": "隐私、安全与稳健性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-4",
+                  "sourceUnitId": "3.1-lesson-2",
+                  "title": "目标冲突与取舍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "lessons": [
+                {
+                  "lessonId": "3.2-lesson-1",
+                  "sourceUnitId": "3.1-lesson-3",
+                  "title": "从设计时纳入治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-2",
+                  "sourceUnitId": "3.1-lesson-4",
+                  "title": "人工监督与升级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-3",
+                  "sourceUnitId": "3.1.1-unit-2",
+                  "title": "可说明性与透明度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-4",
+                  "sourceUnitId": "3.1.2-unit-1",
+                  "title": "收益、影响与比例原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "lessons": [
+                {
+                  "lessonId": "3.3-lesson-1",
+                  "sourceUnitId": "3.1.3-unit-1",
+                  "title": "从用途定义开始设置保障",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-2",
+                  "sourceUnitId": "3.1.4-unit-1",
+                  "title": "复核能力与升级阈值",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-3",
+                  "sourceUnitId": "3.2-lesson-1",
+                  "title": "跨职能治理与问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-4",
+                  "sourceUnitId": "3.2-lesson-2",
+                  "title": "合规风险识别",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.4",
+              "lessons": [
+                {
+                  "lessonId": "3.4-lesson-1",
+                  "sourceUnitId": "3.2-lesson-3",
+                  "title": "访问控制与数据安全",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.4-lesson-2",
+                  "sourceUnitId": "3.2-lesson-4",
+                  "title": "AI风险分类",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.4-lesson-3",
+                  "sourceUnitId": "3.2.1-unit-1",
+                  "title": "负责执行与最终问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.4-lesson-4",
+                  "sourceUnitId": "3.2.2-unit-1",
+                  "title": "用途、资料与适用要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.5",
+              "lessons": [
+                {
+                  "lessonId": "3.5-lesson-1",
+                  "sourceUnitId": "3.2.3-unit-1",
+                  "title": "最小权限与检索前过滤",
+                  "covered": true,
+                  "gameId": "concept-permission-before-retrieval",
+                  "kind": "permission-gate"
+                },
+                {
+                  "lessonId": "3.5-lesson-2",
+                  "sourceUnitId": "3.2.4-unit-1",
+                  "title": "按影响分配治理力度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.5-lesson-3",
+                  "sourceUnitId": "3.3-lesson-1",
+                  "title": "生产监控与事件处理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.5-lesson-4",
+                  "sourceUnitId": "3.3-lesson-2",
+                  "title": "生命周期中的偏差",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.6",
+              "lessons": [
+                {
+                  "lessonId": "3.6-lesson-1",
+                  "sourceUnitId": "3.3-lesson-3",
+                  "title": "有害内容与知识产权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.6-lesson-2",
+                  "sourceUnitId": "3.3-lesson-4",
+                  "title": "幻觉与可靠性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.6-lesson-3",
+                  "sourceUnitId": "3.3.1-unit-1",
+                  "title": "检测、限制、调查与恢复",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.6-lesson-4",
+                  "sourceUnitId": "3.3.2-unit-1",
+                  "title": "采样、标注、目标与部署",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.7",
+              "lessons": [
+                {
+                  "lessonId": "3.7-lesson-1",
+                  "sourceUnitId": "3.3.3-unit-1",
+                  "title": "来源授权、输出用途与有害内容",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.7-lesson-2",
+                  "sourceUnitId": "3.3.4-unit-1",
+                  "title": "证据支持与不确定性",
+                  "covered": true,
+                  "gameId": "concept-claim-version-evidence",
+                  "kind": "evidence-board"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "sections": [
+            {
+              "id": "4.1",
+              "lessons": [
+                {
+                  "lessonId": "4.1-lesson-1",
+                  "sourceUnitId": "4.1-lesson-1",
+                  "title": "组织准备度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-2",
+                  "sourceUnitId": "4.1-lesson-2",
+                  "title": "AI成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-3",
+                  "sourceUnitId": "4.1-lesson-3",
+                  "title": "能力差距",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-4",
+                  "sourceUnitId": "4.1-lesson-4",
+                  "title": "发展路线与投入顺序",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "lessons": [
+                {
+                  "lessonId": "4.2-lesson-1",
+                  "sourceUnitId": "4.1.1-unit-1",
+                  "title": "领导、数据、文化、技术与治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-2",
+                  "sourceUnitId": "4.1.2-unit-1",
+                  "title": "探索、实验与可持续运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-3",
+                  "sourceUnitId": "4.1.3-unit-1",
+                  "title": "区分技能、流程、技术与权限缺口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-4",
+                  "sourceUnitId": "4.1.4-unit-1",
+                  "title": "依赖关系与阶段成果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "lessons": [
+                {
+                  "lessonId": "4.3-lesson-1",
+                  "sourceUnitId": "4.2-lesson-1",
+                  "title": "数据准备与孤岛",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-2",
+                  "sourceUnitId": "4.2-lesson-2",
+                  "title": "数据策略与所有权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-3",
+                  "sourceUnitId": "4.2-lesson-3",
+                  "title": "基础设施要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-4",
+                  "sourceUnitId": "4.2.1-unit-1",
+                  "title": "质量维度与数据契约",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "lessons": [
+                {
+                  "lessonId": "4.4-lesson-1",
+                  "sourceUnitId": "4.2.2-unit-1",
+                  "title": "所有者、血缘与版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-2",
+                  "sourceUnitId": "4.2.3-unit-1",
+                  "title": "延迟、容量、可用性与运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-3",
+                  "sourceUnitId": "4.3-lesson-1",
+                  "title": "高管支持与AI倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-4",
+                  "sourceUnitId": "4.3-lesson-2",
+                  "title": "跨职能团队",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.5",
+              "lessons": [
+                {
+                  "lessonId": "4.5-lesson-1",
+                  "sourceUnitId": "4.3-lesson-3",
+                  "title": "透明沟通",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.5-lesson-2",
+                  "sourceUnitId": "4.3-lesson-4",
+                  "title": "文化障碍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.5-lesson-3",
+                  "sourceUnitId": "4.3-lesson-5",
+                  "title": "员工培养",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.5-lesson-4",
+                  "sourceUnitId": "3.1-lesson-4",
+                  "title": "人工监督与升级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.6",
+              "lessons": [
+                {
+                  "lessonId": "4.6-lesson-1",
+                  "sourceUnitId": "4.3-lesson-6",
+                  "title": "角色转变与人的优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.6-lesson-2",
+                  "sourceUnitId": "4.3.1-unit-1",
+                  "title": "赞助者与业务倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.6-lesson-3",
+                  "sourceUnitId": "3.2.1-unit-1",
+                  "title": "负责执行与最终问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.6-lesson-4",
+                  "sourceUnitId": "4.3.2-unit-1",
+                  "title": "业务、技术与监督角色",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.7",
+              "lessons": [
+                {
+                  "lessonId": "4.7-lesson-1",
+                  "sourceUnitId": "4.3.3-unit-1",
+                  "title": "事实、未知、岗位影响与反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.7-lesson-2",
+                  "sourceUnitId": "4.3.4-unit-1",
+                  "title": "安全试验与问题反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.7-lesson-3",
+                  "sourceUnitId": "3.3-lesson-4",
+                  "title": "幻觉与可靠性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.7-lesson-4",
+                  "sourceUnitId": "3.3.4-unit-1",
+                  "title": "证据支持与不确定性",
+                  "covered": true,
+                  "gameId": "concept-claim-version-evidence",
+                  "kind": "evidence-board"
+                }
+              ]
+            },
+            {
+              "id": "4.8",
+              "lessons": [
+                {
+                  "lessonId": "4.8-lesson-1",
+                  "sourceUnitId": "4.3.5-unit-1",
+                  "title": "从会操作到能判断",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.8-lesson-2",
+                  "sourceUnitId": "4.3.6-unit-1",
+                  "title": "判断、同理心与责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.8-lesson-3",
+                  "sourceUnitId": "4.4-lesson-1",
+                  "title": "迭代式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.8-lesson-4",
+                  "sourceUnitId": "4.4-lesson-2",
+                  "title": "从短期成果到扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.9",
+              "lessons": [
+                {
+                  "lessonId": "4.9-lesson-1",
+                  "sourceUnitId": "4.4-lesson-3",
+                  "title": "卓越中心 COE",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.9-lesson-2",
+                  "sourceUnitId": "4.4-lesson-4",
+                  "title": "持续反馈与价值跟踪",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.9-lesson-3",
+                  "sourceUnitId": "3.3-lesson-1",
+                  "title": "生产监控与事件处理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.9-lesson-4",
+                  "sourceUnitId": "4.4-lesson-5",
+                  "title": "试点转生产",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.10",
+              "lessons": [
+                {
+                  "lessonId": "4.10-lesson-1",
+                  "sourceUnitId": "4.4-lesson-6",
+                  "title": "全企业推广",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.10-lesson-2",
+                  "sourceUnitId": "4.4.1-unit-1",
+                  "title": "构想、实验、启动与扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.10-lesson-3",
+                  "sourceUnitId": "4.4.2-unit-1",
+                  "title": "试点代表性与迁移条件",
+                  "covered": true,
+                  "gameId": "concept-pilot-transfer-investigation",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "4.10-lesson-4",
+                  "sourceUnitId": "4.4.3-unit-1",
+                  "title": "COE与业务责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.11",
+              "lessons": [
+                {
+                  "lessonId": "4.11-lesson-1",
+                  "sourceUnitId": "4.4.4-unit-1",
+                  "title": "采用、质量、风险、成本与结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.11-lesson-2",
+                  "sourceUnitId": "4.4.5-unit-1",
+                  "title": "值守、告警、回退与变更",
+                  "covered": true,
+                  "gameId": "concept-operational-handover-rehearsal",
+                  "kind": "runbook-rehearsal"
+                },
+                {
+                  "lessonId": "4.11-lesson-3",
+                  "sourceUnitId": "4.4.6-unit-1",
+                  "title": "性能、连续性、培训与支持",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B4-legacy",
+      "courseId": "course-11fu42t",
+      "courseHash": "e7810674993ba0ad9e5712d9464b52db62897faf2c046be53b98bec4eafeee66",
+      "chapters": [
+        {
+          "id": "1",
+          "sections": [
+            {
+              "id": "1.1",
+              "lessons": [
+                {
+                  "lessonId": "1.1-lesson-1",
+                  "sourceUnitId": "1.1-lesson-6",
+                  "title": "人工智能 AI",
+                  "covered": true,
+                  "gameId": "evidence-6",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-2",
+                  "sourceUnitId": "1.1-lesson-7",
+                  "title": "机器学习 ML",
+                  "covered": true,
+                  "gameId": "evidence-7",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-3",
+                  "sourceUnitId": "1.1-lesson-16",
+                  "title": "深度学习 DL",
+                  "covered": true,
+                  "gameId": "evidence-16",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-4",
+                  "sourceUnitId": "1.1-lesson-17",
+                  "title": "神经网络",
+                  "covered": true,
+                  "gameId": "evidence-17",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-5",
+                  "sourceUnitId": "1.1-lesson-18",
+                  "title": "自然语言处理 NLP",
+                  "covered": true,
+                  "gameId": "concept-workshop-18",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.1-lesson-6",
+                  "sourceUnitId": "1.1-lesson-19",
+                  "title": "计算机视觉 CV",
+                  "covered": true,
+                  "gameId": "concept-workshop-19",
+                  "kind": "image-inspector"
+                },
+                {
+                  "lessonId": "1.1-lesson-7",
+                  "sourceUnitId": "1.1-lesson-8",
+                  "title": "生成式人工智能 GenAI",
+                  "covered": true,
+                  "gameId": "evidence-8",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-8",
+                  "sourceUnitId": "1.1-lesson-1",
+                  "title": "算法 Algorithm",
+                  "covered": true,
+                  "gameId": "algorithm-rule",
+                  "kind": "rule-runner"
+                },
+                {
+                  "lessonId": "1.1-lesson-9",
+                  "sourceUnitId": "1.1-lesson-2",
+                  "title": "模型 Model",
+                  "covered": true,
+                  "gameId": "concept-workshop-2",
+                  "kind": "model-flow"
+                },
+                {
+                  "lessonId": "1.1-lesson-10",
+                  "sourceUnitId": "1.1-lesson-3",
+                  "title": "训练 Training",
+                  "covered": true,
+                  "gameId": "training-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.1-lesson-11",
+                  "sourceUnitId": "1.1-lesson-4",
+                  "title": "推理 Inference",
+                  "covered": true,
+                  "gameId": "inference-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.1-lesson-12",
+                  "sourceUnitId": "1.1-lesson-5",
+                  "title": "预测 Prediction",
+                  "covered": true,
+                  "gameId": "concept-workshop-5",
+                  "kind": "inventory-sim"
+                },
+                {
+                  "lessonId": "1.1-lesson-13",
+                  "sourceUnitId": "1.1-lesson-20",
+                  "title": "监督学习",
+                  "covered": true,
+                  "gameId": "supervised-sample-trainer",
+                  "kind": "sample-trainer"
+                },
+                {
+                  "lessonId": "1.1-lesson-14",
+                  "sourceUnitId": "1.1-lesson-21",
+                  "title": "无监督学习",
+                  "covered": true,
+                  "gameId": "unlabeled-cluster-builder",
+                  "kind": "cluster-builder"
+                },
+                {
+                  "lessonId": "1.1-lesson-15",
+                  "sourceUnitId": "1.1-lesson-22",
+                  "title": "强化学习",
+                  "covered": true,
+                  "gameId": "delayed-reward-path",
+                  "kind": "reward-path"
+                },
+                {
+                  "lessonId": "1.1-lesson-16",
+                  "sourceUnitId": "1.1-lesson-9",
+                  "title": "结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-9",
+                  "kind": "data-cleaner"
+                },
+                {
+                  "lessonId": "1.1-lesson-17",
+                  "sourceUnitId": "1.1-lesson-10",
+                  "title": "非结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-10",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.1-lesson-18",
+                  "sourceUnitId": "1.1-lesson-11",
+                  "title": "数据质量",
+                  "covered": true,
+                  "gameId": "concept-workshop-11",
+                  "kind": "data-cleaner"
+                },
+                {
+                  "lessonId": "1.1-lesson-19",
+                  "sourceUnitId": "1.1-lesson-12",
+                  "title": "历史数据与泛化",
+                  "covered": true,
+                  "gameId": "evidence-12",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-20",
+                  "sourceUnitId": "1.1-lesson-13",
+                  "title": "训练集与验证",
+                  "covered": true,
+                  "gameId": "evidence-13",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-21",
+                  "sourceUnitId": "1.1-lesson-14",
+                  "title": "AI框架与统一词汇",
+                  "covered": true,
+                  "gameId": "evidence-14",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-22",
+                  "sourceUnitId": "1.1-lesson-15",
+                  "title": "ISO框架意识",
+                  "covered": true,
+                  "gameId": "evidence-15",
+                  "kind": "evidence-board"
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "lessons": [
+                {
+                  "lessonId": "1.2-lesson-1",
+                  "sourceUnitId": "1.2-lesson-1",
+                  "title": "规则还是AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-2",
+                  "sourceUnitId": "1.2-lesson-2",
+                  "title": "AI代理与工具",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-3",
+                  "sourceUnitId": "1.2-lesson-3",
+                  "title": "代理协作与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-4",
+                  "sourceUnitId": "1.2-lesson-4",
+                  "title": "模型漂移与持续监测",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-5",
+                  "sourceUnitId": "1.2-lesson-5",
+                  "title": "工具分类与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-6",
+                  "sourceUnitId": "1.2.1-unit-1",
+                  "title": "确定性与可重复执行",
+                  "covered": true,
+                  "gameId": "deterministic-replay",
+                  "kind": "rule-runner"
+                },
+                {
+                  "lessonId": "1.2-lesson-7",
+                  "sourceUnitId": "1.2.1-unit-2",
+                  "title": "预测、生成与行动的边界",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-8",
+                  "sourceUnitId": "1.2.2-unit-1",
+                  "title": "自主性与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-9",
+                  "sourceUnitId": "1.2.2-unit-2",
+                  "title": "工具契约与最小行动权限",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-10",
+                  "sourceUnitId": "1.2.2-unit-3",
+                  "title": "交接与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-11",
+                  "sourceUnitId": "1.2.3-unit-1",
+                  "title": "数据漂移与概念漂移",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-12",
+                  "sourceUnitId": "1.2.3-unit-2",
+                  "title": "监测基线与反馈闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-13",
+                  "sourceUnitId": "1.2.4-unit-1",
+                  "title": "工具分级与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "lessons": [
+                {
+                  "lessonId": "1.3-lesson-1",
+                  "sourceUnitId": "1.3-lesson-1",
+                  "title": "提示工程",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-2",
+                  "sourceUnitId": "1.3-lesson-2",
+                  "title": "词元与上下文窗口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-3",
+                  "sourceUnitId": "1.3-lesson-3",
+                  "title": "检索增强生成 RAG",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-4",
+                  "sourceUnitId": "1.3-lesson-4",
+                  "title": "微调 Fine-tuning",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-5",
+                  "sourceUnitId": "1.3.1-unit-1",
+                  "title": "任务、上下文、约束与格式",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-6",
+                  "sourceUnitId": "1.3.1-unit-2",
+                  "title": "代表性样例与提示版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-7",
+                  "sourceUnitId": "1.3.2-unit-1",
+                  "title": "输入与输出共享预算",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-8",
+                  "sourceUnitId": "1.3.2-unit-2",
+                  "title": "相关性与信息位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-9",
+                  "sourceUnitId": "1.3.3-unit-1",
+                  "title": "RAG的检索与生成两道关",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-10",
+                  "sourceUnitId": "1.3.3-unit-2",
+                  "title": "微调与外部知识更新",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "sections": [
+            {
+              "id": "2.1",
+              "lessons": [
+                {
+                  "lessonId": "2.1-lesson-1",
+                  "sourceUnitId": "2.1-lesson-1",
+                  "title": "从业务问题到用例",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-2",
+                  "sourceUnitId": "2.1-lesson-2",
+                  "title": "自建、购买或合作",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-3",
+                  "sourceUnitId": "2.1-lesson-3",
+                  "title": "项目优先级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-4",
+                  "sourceUnitId": "2.1-lesson-4",
+                  "title": "什么时候不该用AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-5",
+                  "sourceUnitId": "2.1-lesson-5",
+                  "title": "迁移与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-6",
+                  "sourceUnitId": "2.1.1-unit-1",
+                  "title": "问题、受益者与可观测结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-7",
+                  "sourceUnitId": "2.1.2-unit-1",
+                  "title": "自建、购买与合作的比较维度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-8",
+                  "sourceUnitId": "2.1.3-unit-1",
+                  "title": "价值、可行性与硬性约束",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-9",
+                  "sourceUnitId": "2.1.4-unit-1",
+                  "title": "不使用AI也是方案",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-10",
+                  "sourceUnitId": "2.1.5-unit-1",
+                  "title": "切换、回退与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "lessons": [
+                {
+                  "lessonId": "2.2-lesson-1",
+                  "sourceUnitId": "2.2-lesson-1",
+                  "title": "有形与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-2",
+                  "sourceUnitId": "2.2-lesson-2",
+                  "title": "业务基线",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-3",
+                  "sourceUnitId": "2.2-lesson-3",
+                  "title": "收益与ROI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-4",
+                  "sourceUnitId": "2.2-lesson-4",
+                  "title": "先导性指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-5",
+                  "sourceUnitId": "2.2-lesson-5",
+                  "title": "成本规划与优化",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-6",
+                  "sourceUnitId": "2.2.1-unit-1",
+                  "title": "结果指标与活动指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-7",
+                  "sourceUnitId": "2.2.1-unit-2",
+                  "title": "有形收益与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-8",
+                  "sourceUnitId": "2.2.2-unit-1",
+                  "title": "可比较基线与归因",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-9",
+                  "sourceUnitId": "2.2.3-unit-1",
+                  "title": "ROI公式与核算边界",
+                  "covered": true,
+                  "gameId": "cash-roi-ledger",
+                  "kind": "cost-ledger"
+                },
+                {
+                  "lessonId": "2.2-lesson-10",
+                  "sourceUnitId": "2.2.3-unit-2",
+                  "title": "释放产能与现金节省",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-11",
+                  "sourceUnitId": "2.2.4-unit-1",
+                  "title": "先导信号与滞后结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-12",
+                  "sourceUnitId": "2.2.5-unit-1",
+                  "title": "全生命周期成本",
+                  "covered": true,
+                  "gameId": "volume-unit-cost-lab",
+                  "kind": "volume-simulator"
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "lessons": [
+                {
+                  "lessonId": "2.3-lesson-1",
+                  "sourceUnitId": "2.3-lesson-1",
+                  "title": "竞争格局",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-2",
+                  "sourceUnitId": "2.3-lesson-2",
+                  "title": "业务模式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-3",
+                  "sourceUnitId": "2.3-lesson-3",
+                  "title": "可持续优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-4",
+                  "sourceUnitId": "2.3-lesson-4",
+                  "title": "投资与成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-5",
+                  "sourceUnitId": "2.3.1-unit-1",
+                  "title": "客户问题与竞争位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-6",
+                  "sourceUnitId": "2.3.2-unit-1",
+                  "title": "价值主张、交付与收益逻辑",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-7",
+                  "sourceUnitId": "2.3.3-unit-1",
+                  "title": "互补能力与学习闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-8",
+                  "sourceUnitId": "2.3.4-unit-1",
+                  "title": "分阶段承诺与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "sections": [
+            {
+              "id": "3.1",
+              "lessons": [
+                {
+                  "lessonId": "3.1-lesson-1",
+                  "sourceUnitId": "3.1-lesson-1",
+                  "title": "负责任的AI原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-2",
+                  "sourceUnitId": "3.1-lesson-2",
+                  "title": "目标冲突与取舍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-3",
+                  "sourceUnitId": "3.1-lesson-3",
+                  "title": "从设计时纳入治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-4",
+                  "sourceUnitId": "3.1-lesson-4",
+                  "title": "人工监督与升级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-5",
+                  "sourceUnitId": "3.1.1-unit-1",
+                  "title": "公平性与分组表现",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-6",
+                  "sourceUnitId": "3.1.1-unit-2",
+                  "title": "可说明性与透明度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-7",
+                  "sourceUnitId": "3.1.1-unit-3",
+                  "title": "隐私、安全与稳健性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-8",
+                  "sourceUnitId": "3.1.2-unit-1",
+                  "title": "收益、影响与比例原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-9",
+                  "sourceUnitId": "3.1.3-unit-1",
+                  "title": "从用途定义开始设置保障",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-10",
+                  "sourceUnitId": "3.1.4-unit-1",
+                  "title": "复核能力与升级阈值",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "lessons": [
+                {
+                  "lessonId": "3.2-lesson-1",
+                  "sourceUnitId": "3.2-lesson-1",
+                  "title": "跨职能治理与问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-2",
+                  "sourceUnitId": "3.2-lesson-2",
+                  "title": "合规风险识别",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-3",
+                  "sourceUnitId": "3.2-lesson-3",
+                  "title": "访问控制与数据安全",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-4",
+                  "sourceUnitId": "3.2-lesson-4",
+                  "title": "AI风险分类",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-5",
+                  "sourceUnitId": "3.2.1-unit-1",
+                  "title": "负责执行与最终问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-6",
+                  "sourceUnitId": "3.2.2-unit-1",
+                  "title": "用途、资料与适用要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-7",
+                  "sourceUnitId": "3.2.3-unit-1",
+                  "title": "最小权限与检索前过滤",
+                  "covered": true,
+                  "gameId": "concept-permission-before-retrieval",
+                  "kind": "permission-gate"
+                },
+                {
+                  "lessonId": "3.2-lesson-8",
+                  "sourceUnitId": "3.2.4-unit-1",
+                  "title": "按影响分配治理力度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "lessons": [
+                {
+                  "lessonId": "3.3-lesson-1",
+                  "sourceUnitId": "3.3-lesson-1",
+                  "title": "生产监控与事件处理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-2",
+                  "sourceUnitId": "3.3-lesson-2",
+                  "title": "生命周期中的偏差",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-3",
+                  "sourceUnitId": "3.3-lesson-3",
+                  "title": "有害内容与知识产权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-4",
+                  "sourceUnitId": "3.3-lesson-4",
+                  "title": "幻觉与可靠性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-5",
+                  "sourceUnitId": "3.3.1-unit-1",
+                  "title": "检测、限制、调查与恢复",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-6",
+                  "sourceUnitId": "3.3.2-unit-1",
+                  "title": "采样、标注、目标与部署",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-7",
+                  "sourceUnitId": "3.3.3-unit-1",
+                  "title": "来源授权、输出用途与有害内容",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-8",
+                  "sourceUnitId": "3.3.4-unit-1",
+                  "title": "证据支持与不确定性",
+                  "covered": true,
+                  "gameId": "concept-claim-version-evidence",
+                  "kind": "evidence-board"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "sections": [
+            {
+              "id": "4.1",
+              "lessons": [
+                {
+                  "lessonId": "4.1-lesson-1",
+                  "sourceUnitId": "4.1-lesson-1",
+                  "title": "组织准备度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-2",
+                  "sourceUnitId": "4.1-lesson-2",
+                  "title": "AI成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-3",
+                  "sourceUnitId": "4.1-lesson-3",
+                  "title": "能力差距",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-4",
+                  "sourceUnitId": "4.1-lesson-4",
+                  "title": "发展路线与投入顺序",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-5",
+                  "sourceUnitId": "4.1.1-unit-1",
+                  "title": "领导、数据、文化、技术与治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-6",
+                  "sourceUnitId": "4.1.2-unit-1",
+                  "title": "探索、实验与可持续运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-7",
+                  "sourceUnitId": "4.1.3-unit-1",
+                  "title": "区分技能、流程、技术与权限缺口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-8",
+                  "sourceUnitId": "4.1.4-unit-1",
+                  "title": "依赖关系与阶段成果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "lessons": [
+                {
+                  "lessonId": "4.2-lesson-1",
+                  "sourceUnitId": "4.2-lesson-1",
+                  "title": "数据准备与孤岛",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-2",
+                  "sourceUnitId": "4.2-lesson-2",
+                  "title": "数据策略与所有权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-3",
+                  "sourceUnitId": "4.2-lesson-3",
+                  "title": "基础设施要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-4",
+                  "sourceUnitId": "4.2.1-unit-1",
+                  "title": "质量维度与数据契约",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-5",
+                  "sourceUnitId": "4.2.2-unit-1",
+                  "title": "所有者、血缘与版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-6",
+                  "sourceUnitId": "4.2.3-unit-1",
+                  "title": "延迟、容量、可用性与运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "lessons": [
+                {
+                  "lessonId": "4.3-lesson-1",
+                  "sourceUnitId": "4.3-lesson-1",
+                  "title": "高管支持与AI倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-2",
+                  "sourceUnitId": "4.3-lesson-2",
+                  "title": "跨职能团队",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-3",
+                  "sourceUnitId": "4.3-lesson-3",
+                  "title": "透明沟通",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-4",
+                  "sourceUnitId": "4.3-lesson-4",
+                  "title": "文化障碍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-5",
+                  "sourceUnitId": "4.3-lesson-5",
+                  "title": "员工培养",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-6",
+                  "sourceUnitId": "4.3-lesson-6",
+                  "title": "角色转变与人的优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-7",
+                  "sourceUnitId": "4.3.1-unit-1",
+                  "title": "赞助者与业务倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-8",
+                  "sourceUnitId": "4.3.2-unit-1",
+                  "title": "业务、技术与监督角色",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-9",
+                  "sourceUnitId": "4.3.3-unit-1",
+                  "title": "事实、未知、岗位影响与反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-10",
+                  "sourceUnitId": "4.3.4-unit-1",
+                  "title": "安全试验与问题反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-11",
+                  "sourceUnitId": "4.3.5-unit-1",
+                  "title": "从会操作到能判断",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-12",
+                  "sourceUnitId": "4.3.6-unit-1",
+                  "title": "判断、同理心与责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "lessons": [
+                {
+                  "lessonId": "4.4-lesson-1",
+                  "sourceUnitId": "4.4-lesson-1",
+                  "title": "迭代式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-2",
+                  "sourceUnitId": "4.4-lesson-2",
+                  "title": "从短期成果到扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-3",
+                  "sourceUnitId": "4.4-lesson-3",
+                  "title": "卓越中心 COE",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-4",
+                  "sourceUnitId": "4.4-lesson-4",
+                  "title": "持续反馈与价值跟踪",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-5",
+                  "sourceUnitId": "4.4-lesson-5",
+                  "title": "试点转生产",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-6",
+                  "sourceUnitId": "4.4-lesson-6",
+                  "title": "全企业推广",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-7",
+                  "sourceUnitId": "4.4.1-unit-1",
+                  "title": "构想、实验、启动与扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-8",
+                  "sourceUnitId": "4.4.2-unit-1",
+                  "title": "试点代表性与迁移条件",
+                  "covered": true,
+                  "gameId": "concept-pilot-transfer-investigation",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "4.4-lesson-9",
+                  "sourceUnitId": "4.4.3-unit-1",
+                  "title": "COE与业务责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-10",
+                  "sourceUnitId": "4.4.4-unit-1",
+                  "title": "采用、质量、风险、成本与结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-11",
+                  "sourceUnitId": "4.4.5-unit-1",
+                  "title": "值守、告警、回退与变更",
+                  "covered": true,
+                  "gameId": "concept-operational-handover-rehearsal",
+                  "kind": "runbook-rehearsal"
+                },
+                {
+                  "lessonId": "4.4-lesson-12",
+                  "sourceUnitId": "4.4.6-unit-1",
+                  "title": "性能、连续性、培训与支持",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B5-aib",
+      "courseId": "course-c5mcdg",
+      "courseHash": "c69ed0b965a4e5897b966bba41407c4a385cecd66895e091a0b247d2d05a31b4",
+      "chapters": [
+        {
+          "id": "1",
+          "sections": [
+            {
+              "id": "1.1",
+              "lessons": [
+                {
+                  "lessonId": "1.1-lesson-1",
+                  "sourceUnitId": "1.1-lesson-6",
+                  "title": "人工智能 AI",
+                  "covered": true,
+                  "gameId": "evidence-6",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-2",
+                  "sourceUnitId": "1.1-lesson-7",
+                  "title": "机器学习 ML",
+                  "covered": true,
+                  "gameId": "evidence-7",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-3",
+                  "sourceUnitId": "1.1-lesson-1",
+                  "title": "算法 Algorithm",
+                  "covered": true,
+                  "gameId": "algorithm-rule",
+                  "kind": "rule-runner"
+                },
+                {
+                  "lessonId": "1.1-lesson-4",
+                  "sourceUnitId": "1.1-lesson-2",
+                  "title": "模型 Model",
+                  "covered": true,
+                  "gameId": "concept-workshop-2",
+                  "kind": "model-flow"
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "lessons": [
+                {
+                  "lessonId": "1.2-lesson-1",
+                  "sourceUnitId": "1.1-lesson-17",
+                  "title": "神经网络",
+                  "covered": true,
+                  "gameId": "evidence-17",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.2-lesson-2",
+                  "sourceUnitId": "1.1-lesson-16",
+                  "title": "深度学习 DL",
+                  "covered": true,
+                  "gameId": "evidence-16",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.2-lesson-3",
+                  "sourceUnitId": "1.1-lesson-18",
+                  "title": "自然语言处理 NLP",
+                  "covered": true,
+                  "gameId": "concept-workshop-18",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.2-lesson-4",
+                  "sourceUnitId": "1.1-lesson-19",
+                  "title": "计算机视觉 CV",
+                  "covered": true,
+                  "gameId": "concept-workshop-19",
+                  "kind": "image-inspector"
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "lessons": [
+                {
+                  "lessonId": "1.3-lesson-1",
+                  "sourceUnitId": "1.1-lesson-8",
+                  "title": "生成式人工智能 GenAI",
+                  "covered": true,
+                  "gameId": "evidence-8",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.3-lesson-2",
+                  "sourceUnitId": "1.1-lesson-3",
+                  "title": "训练 Training",
+                  "covered": true,
+                  "gameId": "training-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.3-lesson-3",
+                  "sourceUnitId": "1.1-lesson-4",
+                  "title": "推理 Inference",
+                  "covered": true,
+                  "gameId": "inference-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.3-lesson-4",
+                  "sourceUnitId": "1.1-lesson-5",
+                  "title": "预测 Prediction",
+                  "covered": true,
+                  "gameId": "concept-workshop-5",
+                  "kind": "inventory-sim"
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "lessons": [
+                {
+                  "lessonId": "1.4-lesson-1",
+                  "sourceUnitId": "1.1-lesson-20",
+                  "title": "监督学习",
+                  "covered": true,
+                  "gameId": "supervised-sample-trainer",
+                  "kind": "sample-trainer"
+                },
+                {
+                  "lessonId": "1.4-lesson-2",
+                  "sourceUnitId": "1.1-lesson-21",
+                  "title": "无监督学习",
+                  "covered": true,
+                  "gameId": "unlabeled-cluster-builder",
+                  "kind": "cluster-builder"
+                },
+                {
+                  "lessonId": "1.4-lesson-3",
+                  "sourceUnitId": "1.1-lesson-22",
+                  "title": "强化学习",
+                  "covered": true,
+                  "gameId": "delayed-reward-path",
+                  "kind": "reward-path"
+                },
+                {
+                  "lessonId": "1.4-lesson-4",
+                  "sourceUnitId": "1.1-lesson-9",
+                  "title": "结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-9",
+                  "kind": "data-cleaner"
+                }
+              ]
+            },
+            {
+              "id": "1.5",
+              "lessons": [
+                {
+                  "lessonId": "1.5-lesson-1",
+                  "sourceUnitId": "1.1-lesson-10",
+                  "title": "非结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-10",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.5-lesson-2",
+                  "sourceUnitId": "1.1-lesson-11",
+                  "title": "数据质量",
+                  "covered": true,
+                  "gameId": "concept-workshop-11",
+                  "kind": "data-cleaner"
+                },
+                {
+                  "lessonId": "1.5-lesson-3",
+                  "sourceUnitId": "1.1-lesson-12",
+                  "title": "历史数据与泛化",
+                  "covered": true,
+                  "gameId": "evidence-12",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.5-lesson-4",
+                  "sourceUnitId": "1.1-lesson-13",
+                  "title": "训练集与验证",
+                  "covered": true,
+                  "gameId": "evidence-13",
+                  "kind": "evidence-board"
+                }
+              ]
+            },
+            {
+              "id": "1.6",
+              "lessons": [
+                {
+                  "lessonId": "1.6-lesson-1",
+                  "sourceUnitId": "1.1-lesson-14",
+                  "title": "AI框架与统一词汇",
+                  "covered": true,
+                  "gameId": "evidence-14",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.6-lesson-2",
+                  "sourceUnitId": "1.1-lesson-15",
+                  "title": "ISO框架意识",
+                  "covered": true,
+                  "gameId": "evidence-15",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.6-lesson-3",
+                  "sourceUnitId": "1.2-lesson-1",
+                  "title": "规则还是学习型AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.6-lesson-4",
+                  "sourceUnitId": "1.2-lesson-2",
+                  "title": "AI代理与工具",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.7",
+              "lessons": [
+                {
+                  "lessonId": "1.7-lesson-1",
+                  "sourceUnitId": "1.2-lesson-3",
+                  "title": "代理协作与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.7-lesson-2",
+                  "sourceUnitId": "1.2-lesson-4",
+                  "title": "模型漂移与持续监测",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.7-lesson-3",
+                  "sourceUnitId": "1.2-lesson-5",
+                  "title": "工具分类与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.7-lesson-4",
+                  "sourceUnitId": "1.2.1-unit-1",
+                  "title": "确定性与可重复执行",
+                  "covered": true,
+                  "gameId": "deterministic-replay",
+                  "kind": "rule-runner"
+                }
+              ]
+            },
+            {
+              "id": "1.8",
+              "lessons": [
+                {
+                  "lessonId": "1.8-lesson-1",
+                  "sourceUnitId": "1.2.1-unit-2",
+                  "title": "预测、生成与行动的边界",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.8-lesson-2",
+                  "sourceUnitId": "1.2.2-unit-1",
+                  "title": "自主性与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.8-lesson-3",
+                  "sourceUnitId": "1.2.2-unit-2",
+                  "title": "工具契约与最小行动权限",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.8-lesson-4",
+                  "sourceUnitId": "1.2.2-unit-3",
+                  "title": "交接与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.9",
+              "lessons": [
+                {
+                  "lessonId": "1.9-lesson-1",
+                  "sourceUnitId": "1.2.3-unit-1",
+                  "title": "数据漂移与概念漂移",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.9-lesson-2",
+                  "sourceUnitId": "1.2.3-unit-2",
+                  "title": "监测基线与反馈闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.9-lesson-3",
+                  "sourceUnitId": "1.2.4-unit-1",
+                  "title": "工具分级与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.9-lesson-4",
+                  "sourceUnitId": "1.3-lesson-1",
+                  "title": "提示工程",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.10",
+              "lessons": [
+                {
+                  "lessonId": "1.10-lesson-1",
+                  "sourceUnitId": "1.3-lesson-2",
+                  "title": "词元与上下文窗口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.10-lesson-2",
+                  "sourceUnitId": "1.3-lesson-3",
+                  "title": "检索增强生成 RAG",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.10-lesson-3",
+                  "sourceUnitId": "1.3-lesson-4",
+                  "title": "微调 Fine-tuning",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.10-lesson-4",
+                  "sourceUnitId": "1.3.1-unit-1",
+                  "title": "任务、上下文、约束与格式",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.11",
+              "lessons": [
+                {
+                  "lessonId": "1.11-lesson-1",
+                  "sourceUnitId": "1.3.1-unit-2",
+                  "title": "代表性样例与提示版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.11-lesson-2",
+                  "sourceUnitId": "1.3.2-unit-1",
+                  "title": "输入与输出共享预算",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.11-lesson-3",
+                  "sourceUnitId": "1.3.2-unit-2",
+                  "title": "相关性与信息位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.11-lesson-4",
+                  "sourceUnitId": "1.3.3-unit-1",
+                  "title": "RAG的检索与生成两道关",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.12",
+              "lessons": [
+                {
+                  "lessonId": "1.12-lesson-1",
+                  "sourceUnitId": "1.3.3-unit-2",
+                  "title": "微调与外部知识更新",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "sections": [
+            {
+              "id": "2.1",
+              "lessons": [
+                {
+                  "lessonId": "2.1-lesson-1",
+                  "sourceUnitId": "2.1-lesson-1",
+                  "title": "从业务问题到用例",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-2",
+                  "sourceUnitId": "2.1-lesson-2",
+                  "title": "自建、购买或合作",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-3",
+                  "sourceUnitId": "2.1.1-unit-1",
+                  "title": "问题、受益者与可观测结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-4",
+                  "sourceUnitId": "2.1-lesson-3",
+                  "title": "项目优先级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "lessons": [
+                {
+                  "lessonId": "2.2-lesson-1",
+                  "sourceUnitId": "2.1-lesson-4",
+                  "title": "什么时候不该用AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-2",
+                  "sourceUnitId": "2.1-lesson-5",
+                  "title": "迁移与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-3",
+                  "sourceUnitId": "2.1.2-unit-1",
+                  "title": "自建、购买与合作的比较维度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-4",
+                  "sourceUnitId": "2.1.3-unit-1",
+                  "title": "价值、可行性与硬性约束",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "lessons": [
+                {
+                  "lessonId": "2.3-lesson-1",
+                  "sourceUnitId": "2.1.4-unit-1",
+                  "title": "不使用AI也是方案",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-2",
+                  "sourceUnitId": "2.1.5-unit-1",
+                  "title": "切换、回退与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-3",
+                  "sourceUnitId": "2.2-lesson-1",
+                  "title": "有形与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-4",
+                  "sourceUnitId": "2.2-lesson-2",
+                  "title": "业务基线",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.4",
+              "lessons": [
+                {
+                  "lessonId": "2.4-lesson-1",
+                  "sourceUnitId": "2.2.3-unit-2",
+                  "title": "释放产能与现金节省",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.4-lesson-2",
+                  "sourceUnitId": "2.2.5-unit-1",
+                  "title": "全生命周期成本",
+                  "covered": true,
+                  "gameId": "volume-unit-cost-lab",
+                  "kind": "volume-simulator"
+                },
+                {
+                  "lessonId": "2.4-lesson-3",
+                  "sourceUnitId": "2.2-lesson-3",
+                  "title": "收益与ROI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.4-lesson-4",
+                  "sourceUnitId": "2.2-lesson-4",
+                  "title": "先导性指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.5",
+              "lessons": [
+                {
+                  "lessonId": "2.5-lesson-1",
+                  "sourceUnitId": "2.2-lesson-5",
+                  "title": "成本规划与优化",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.5-lesson-2",
+                  "sourceUnitId": "2.2.1-unit-1",
+                  "title": "结果指标与活动指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.5-lesson-3",
+                  "sourceUnitId": "2.2.1-unit-2",
+                  "title": "有形收益与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.5-lesson-4",
+                  "sourceUnitId": "2.2.2-unit-1",
+                  "title": "可比较基线与归因",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.6",
+              "lessons": [
+                {
+                  "lessonId": "2.6-lesson-1",
+                  "sourceUnitId": "2.2.3-unit-1",
+                  "title": "ROI公式与核算边界",
+                  "covered": true,
+                  "gameId": "cash-roi-ledger",
+                  "kind": "cost-ledger"
+                },
+                {
+                  "lessonId": "2.6-lesson-2",
+                  "sourceUnitId": "2.2.4-unit-1",
+                  "title": "先导信号与滞后结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.6-lesson-3",
+                  "sourceUnitId": "2.3-lesson-1",
+                  "title": "竞争格局",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.6-lesson-4",
+                  "sourceUnitId": "2.3-lesson-2",
+                  "title": "业务模式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.7",
+              "lessons": [
+                {
+                  "lessonId": "2.7-lesson-1",
+                  "sourceUnitId": "2.3-lesson-3",
+                  "title": "可持续优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.7-lesson-2",
+                  "sourceUnitId": "2.3-lesson-4",
+                  "title": "投资与成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.7-lesson-3",
+                  "sourceUnitId": "2.3.1-unit-1",
+                  "title": "客户问题与竞争位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.7-lesson-4",
+                  "sourceUnitId": "2.3.2-unit-1",
+                  "title": "价值主张、交付与收益逻辑",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.8",
+              "lessons": [
+                {
+                  "lessonId": "2.8-lesson-1",
+                  "sourceUnitId": "2.3.3-unit-1",
+                  "title": "互补能力与学习闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.8-lesson-2",
+                  "sourceUnitId": "2.3.4-unit-1",
+                  "title": "分阶段承诺与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "sections": [
+            {
+              "id": "3.1",
+              "lessons": [
+                {
+                  "lessonId": "3.1-lesson-1",
+                  "sourceUnitId": "3.1-lesson-1",
+                  "title": "负责任的AI原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-2",
+                  "sourceUnitId": "3.1.1-unit-1",
+                  "title": "公平性与分组表现",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-3",
+                  "sourceUnitId": "3.1.1-unit-3",
+                  "title": "隐私、安全与稳健性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-4",
+                  "sourceUnitId": "3.1-lesson-2",
+                  "title": "目标冲突与取舍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "lessons": [
+                {
+                  "lessonId": "3.2-lesson-1",
+                  "sourceUnitId": "3.1-lesson-3",
+                  "title": "从设计时纳入治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-2",
+                  "sourceUnitId": "3.1-lesson-4",
+                  "title": "人工监督与升级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-3",
+                  "sourceUnitId": "3.1.1-unit-2",
+                  "title": "可说明性与透明度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-4",
+                  "sourceUnitId": "3.1.2-unit-1",
+                  "title": "收益、影响与比例原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "lessons": [
+                {
+                  "lessonId": "3.3-lesson-1",
+                  "sourceUnitId": "3.1.3-unit-1",
+                  "title": "从用途定义开始设置保障",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-2",
+                  "sourceUnitId": "3.1.4-unit-1",
+                  "title": "复核能力与升级阈值",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-3",
+                  "sourceUnitId": "3.2-lesson-1",
+                  "title": "跨职能治理与问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-4",
+                  "sourceUnitId": "3.2-lesson-2",
+                  "title": "合规风险识别",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.4",
+              "lessons": [
+                {
+                  "lessonId": "3.4-lesson-1",
+                  "sourceUnitId": "3.2-lesson-3",
+                  "title": "访问控制与数据安全",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.4-lesson-2",
+                  "sourceUnitId": "3.2-lesson-4",
+                  "title": "AI风险分类",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.4-lesson-3",
+                  "sourceUnitId": "3.2.1-unit-1",
+                  "title": "负责执行与最终问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.4-lesson-4",
+                  "sourceUnitId": "3.2.2-unit-1",
+                  "title": "用途、资料与适用要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.5",
+              "lessons": [
+                {
+                  "lessonId": "3.5-lesson-1",
+                  "sourceUnitId": "3.2.3-unit-1",
+                  "title": "最小权限与检索前过滤",
+                  "covered": true,
+                  "gameId": "concept-permission-before-retrieval",
+                  "kind": "permission-gate"
+                },
+                {
+                  "lessonId": "3.5-lesson-2",
+                  "sourceUnitId": "3.2.4-unit-1",
+                  "title": "按影响分配治理力度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.5-lesson-3",
+                  "sourceUnitId": "3.3-lesson-1",
+                  "title": "生产监控与事件处理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.5-lesson-4",
+                  "sourceUnitId": "3.3-lesson-2",
+                  "title": "生命周期中的偏差",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.6",
+              "lessons": [
+                {
+                  "lessonId": "3.6-lesson-1",
+                  "sourceUnitId": "3.3-lesson-3",
+                  "title": "有害内容与知识产权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.6-lesson-2",
+                  "sourceUnitId": "3.3-lesson-4",
+                  "title": "幻觉与可靠性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.6-lesson-3",
+                  "sourceUnitId": "3.3.1-unit-1",
+                  "title": "检测、限制、调查与恢复",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.6-lesson-4",
+                  "sourceUnitId": "3.3.2-unit-1",
+                  "title": "采样、标注、目标与部署",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.7",
+              "lessons": [
+                {
+                  "lessonId": "3.7-lesson-1",
+                  "sourceUnitId": "3.3.3-unit-1",
+                  "title": "来源授权、输出用途与有害内容",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.7-lesson-2",
+                  "sourceUnitId": "3.3.4-unit-1",
+                  "title": "证据支持与不确定性",
+                  "covered": true,
+                  "gameId": "concept-claim-version-evidence",
+                  "kind": "evidence-board"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "sections": [
+            {
+              "id": "4.1",
+              "lessons": [
+                {
+                  "lessonId": "4.1-lesson-1",
+                  "sourceUnitId": "4.1-lesson-1",
+                  "title": "组织准备度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-2",
+                  "sourceUnitId": "4.1-lesson-2",
+                  "title": "AI成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-3",
+                  "sourceUnitId": "4.1-lesson-3",
+                  "title": "能力差距",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-4",
+                  "sourceUnitId": "4.1-lesson-4",
+                  "title": "发展路线与投入顺序",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "lessons": [
+                {
+                  "lessonId": "4.2-lesson-1",
+                  "sourceUnitId": "4.1.1-unit-1",
+                  "title": "领导、数据、文化、技术与治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-2",
+                  "sourceUnitId": "4.1.2-unit-1",
+                  "title": "探索、实验与可持续运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-3",
+                  "sourceUnitId": "4.1.3-unit-1",
+                  "title": "区分技能、流程、技术与权限缺口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-4",
+                  "sourceUnitId": "4.1.4-unit-1",
+                  "title": "依赖关系与阶段成果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "lessons": [
+                {
+                  "lessonId": "4.3-lesson-1",
+                  "sourceUnitId": "4.2-lesson-1",
+                  "title": "数据准备与孤岛",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-2",
+                  "sourceUnitId": "4.2-lesson-2",
+                  "title": "数据策略与所有权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-3",
+                  "sourceUnitId": "4.2-lesson-3",
+                  "title": "基础设施要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-4",
+                  "sourceUnitId": "4.2.1-unit-1",
+                  "title": "质量维度与数据契约",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "lessons": [
+                {
+                  "lessonId": "4.4-lesson-1",
+                  "sourceUnitId": "4.2.2-unit-1",
+                  "title": "所有者、血缘与版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-2",
+                  "sourceUnitId": "4.2.3-unit-1",
+                  "title": "延迟、容量、可用性与运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-3",
+                  "sourceUnitId": "4.3-lesson-1",
+                  "title": "高管支持与AI倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-4",
+                  "sourceUnitId": "4.3-lesson-2",
+                  "title": "跨职能团队",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.5",
+              "lessons": [
+                {
+                  "lessonId": "4.5-lesson-1",
+                  "sourceUnitId": "4.3-lesson-3",
+                  "title": "透明沟通",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.5-lesson-2",
+                  "sourceUnitId": "4.3-lesson-4",
+                  "title": "文化障碍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.5-lesson-3",
+                  "sourceUnitId": "4.3-lesson-5",
+                  "title": "员工培养",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.5-lesson-4",
+                  "sourceUnitId": "3.1-lesson-4",
+                  "title": "人工监督与升级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.6",
+              "lessons": [
+                {
+                  "lessonId": "4.6-lesson-1",
+                  "sourceUnitId": "4.3-lesson-6",
+                  "title": "角色转变与人的优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.6-lesson-2",
+                  "sourceUnitId": "4.3.1-unit-1",
+                  "title": "赞助者与业务倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.6-lesson-3",
+                  "sourceUnitId": "3.2.1-unit-1",
+                  "title": "负责执行与最终问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.6-lesson-4",
+                  "sourceUnitId": "4.3.2-unit-1",
+                  "title": "业务、技术与监督角色",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.7",
+              "lessons": [
+                {
+                  "lessonId": "4.7-lesson-1",
+                  "sourceUnitId": "4.3.3-unit-1",
+                  "title": "事实、未知、岗位影响与反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.7-lesson-2",
+                  "sourceUnitId": "4.3.4-unit-1",
+                  "title": "安全试验与问题反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.7-lesson-3",
+                  "sourceUnitId": "3.3-lesson-4",
+                  "title": "幻觉与可靠性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.7-lesson-4",
+                  "sourceUnitId": "3.3.4-unit-1",
+                  "title": "证据支持与不确定性",
+                  "covered": true,
+                  "gameId": "concept-claim-version-evidence",
+                  "kind": "evidence-board"
+                }
+              ]
+            },
+            {
+              "id": "4.8",
+              "lessons": [
+                {
+                  "lessonId": "4.8-lesson-1",
+                  "sourceUnitId": "4.3.5-unit-1",
+                  "title": "从会操作到能判断",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.8-lesson-2",
+                  "sourceUnitId": "4.3.6-unit-1",
+                  "title": "判断、同理心与责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.8-lesson-3",
+                  "sourceUnitId": "4.4-lesson-1",
+                  "title": "迭代式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.8-lesson-4",
+                  "sourceUnitId": "4.4-lesson-2",
+                  "title": "从短期成果到扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.9",
+              "lessons": [
+                {
+                  "lessonId": "4.9-lesson-1",
+                  "sourceUnitId": "4.4-lesson-3",
+                  "title": "卓越中心 COE",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.9-lesson-2",
+                  "sourceUnitId": "4.4-lesson-4",
+                  "title": "持续反馈与价值跟踪",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.9-lesson-3",
+                  "sourceUnitId": "3.3-lesson-1",
+                  "title": "生产监控与事件处理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.9-lesson-4",
+                  "sourceUnitId": "4.4-lesson-5",
+                  "title": "试点转生产",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.10",
+              "lessons": [
+                {
+                  "lessonId": "4.10-lesson-1",
+                  "sourceUnitId": "4.4-lesson-6",
+                  "title": "全企业推广",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.10-lesson-2",
+                  "sourceUnitId": "4.4.1-unit-1",
+                  "title": "构想、实验、启动与扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.10-lesson-3",
+                  "sourceUnitId": "4.4.2-unit-1",
+                  "title": "试点代表性与迁移条件",
+                  "covered": true,
+                  "gameId": "concept-pilot-transfer-investigation",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "4.10-lesson-4",
+                  "sourceUnitId": "4.4.3-unit-1",
+                  "title": "COE与业务责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.11",
+              "lessons": [
+                {
+                  "lessonId": "4.11-lesson-1",
+                  "sourceUnitId": "4.4.4-unit-1",
+                  "title": "采用、质量、风险、成本与结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.11-lesson-2",
+                  "sourceUnitId": "4.4.5-unit-1",
+                  "title": "值守、告警、回退与变更",
+                  "covered": true,
+                  "gameId": "concept-operational-handover-rehearsal",
+                  "kind": "runbook-rehearsal"
+                },
+                {
+                  "lessonId": "4.11-lesson-3",
+                  "sourceUnitId": "4.4.6-unit-1",
+                  "title": "性能、连续性、培训与支持",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B5-legacy",
+      "courseId": "course-87vtar",
+      "courseHash": "6306df554e58e8305558b1141dd0eb77d12801dd78178bcfe0c951c7fc66bb21",
+      "chapters": [
+        {
+          "id": "1",
+          "sections": [
+            {
+              "id": "1.1",
+              "lessons": [
+                {
+                  "lessonId": "1.1-lesson-1",
+                  "sourceUnitId": "1.1-lesson-6",
+                  "title": "人工智能 AI",
+                  "covered": true,
+                  "gameId": "evidence-6",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-2",
+                  "sourceUnitId": "1.1-lesson-7",
+                  "title": "机器学习 ML",
+                  "covered": true,
+                  "gameId": "evidence-7",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-3",
+                  "sourceUnitId": "1.1-lesson-16",
+                  "title": "深度学习 DL",
+                  "covered": true,
+                  "gameId": "evidence-16",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-4",
+                  "sourceUnitId": "1.1-lesson-17",
+                  "title": "神经网络",
+                  "covered": true,
+                  "gameId": "evidence-17",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-5",
+                  "sourceUnitId": "1.1-lesson-18",
+                  "title": "自然语言处理 NLP",
+                  "covered": true,
+                  "gameId": "concept-workshop-18",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.1-lesson-6",
+                  "sourceUnitId": "1.1-lesson-19",
+                  "title": "计算机视觉 CV",
+                  "covered": true,
+                  "gameId": "concept-workshop-19",
+                  "kind": "image-inspector"
+                },
+                {
+                  "lessonId": "1.1-lesson-7",
+                  "sourceUnitId": "1.1-lesson-8",
+                  "title": "生成式人工智能 GenAI",
+                  "covered": true,
+                  "gameId": "evidence-8",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-8",
+                  "sourceUnitId": "1.1-lesson-1",
+                  "title": "算法 Algorithm",
+                  "covered": true,
+                  "gameId": "algorithm-rule",
+                  "kind": "rule-runner"
+                },
+                {
+                  "lessonId": "1.1-lesson-9",
+                  "sourceUnitId": "1.1-lesson-2",
+                  "title": "模型 Model",
+                  "covered": true,
+                  "gameId": "concept-workshop-2",
+                  "kind": "model-flow"
+                },
+                {
+                  "lessonId": "1.1-lesson-10",
+                  "sourceUnitId": "1.1-lesson-3",
+                  "title": "训练 Training",
+                  "covered": true,
+                  "gameId": "training-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.1-lesson-11",
+                  "sourceUnitId": "1.1-lesson-4",
+                  "title": "推理 Inference",
+                  "covered": true,
+                  "gameId": "inference-parameter-lab",
+                  "kind": "parameter-lab"
+                },
+                {
+                  "lessonId": "1.1-lesson-12",
+                  "sourceUnitId": "1.1-lesson-5",
+                  "title": "预测 Prediction",
+                  "covered": true,
+                  "gameId": "concept-workshop-5",
+                  "kind": "inventory-sim"
+                },
+                {
+                  "lessonId": "1.1-lesson-13",
+                  "sourceUnitId": "1.1-lesson-20",
+                  "title": "监督学习",
+                  "covered": true,
+                  "gameId": "supervised-sample-trainer",
+                  "kind": "sample-trainer"
+                },
+                {
+                  "lessonId": "1.1-lesson-14",
+                  "sourceUnitId": "1.1-lesson-21",
+                  "title": "无监督学习",
+                  "covered": true,
+                  "gameId": "unlabeled-cluster-builder",
+                  "kind": "cluster-builder"
+                },
+                {
+                  "lessonId": "1.1-lesson-15",
+                  "sourceUnitId": "1.1-lesson-22",
+                  "title": "强化学习",
+                  "covered": true,
+                  "gameId": "delayed-reward-path",
+                  "kind": "reward-path"
+                },
+                {
+                  "lessonId": "1.1-lesson-16",
+                  "sourceUnitId": "1.1-lesson-9",
+                  "title": "结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-9",
+                  "kind": "data-cleaner"
+                },
+                {
+                  "lessonId": "1.1-lesson-17",
+                  "sourceUnitId": "1.1-lesson-10",
+                  "title": "非结构化数据",
+                  "covered": true,
+                  "gameId": "concept-workshop-10",
+                  "kind": "text-extractor"
+                },
+                {
+                  "lessonId": "1.1-lesson-18",
+                  "sourceUnitId": "1.1-lesson-11",
+                  "title": "数据质量",
+                  "covered": true,
+                  "gameId": "concept-workshop-11",
+                  "kind": "data-cleaner"
+                },
+                {
+                  "lessonId": "1.1-lesson-19",
+                  "sourceUnitId": "1.1-lesson-12",
+                  "title": "历史数据与泛化",
+                  "covered": true,
+                  "gameId": "evidence-12",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-20",
+                  "sourceUnitId": "1.1-lesson-13",
+                  "title": "训练集与验证",
+                  "covered": true,
+                  "gameId": "evidence-13",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-21",
+                  "sourceUnitId": "1.1-lesson-14",
+                  "title": "AI框架与统一词汇",
+                  "covered": true,
+                  "gameId": "evidence-14",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "1.1-lesson-22",
+                  "sourceUnitId": "1.1-lesson-15",
+                  "title": "ISO框架意识",
+                  "covered": true,
+                  "gameId": "evidence-15",
+                  "kind": "evidence-board"
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "lessons": [
+                {
+                  "lessonId": "1.2-lesson-1",
+                  "sourceUnitId": "1.2-lesson-1",
+                  "title": "规则还是AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-2",
+                  "sourceUnitId": "1.2-lesson-2",
+                  "title": "AI代理与工具",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-3",
+                  "sourceUnitId": "1.2-lesson-3",
+                  "title": "代理协作与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-4",
+                  "sourceUnitId": "1.2-lesson-4",
+                  "title": "模型漂移与持续监测",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-5",
+                  "sourceUnitId": "1.2-lesson-5",
+                  "title": "工具分类与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-6",
+                  "sourceUnitId": "1.2.1-unit-1",
+                  "title": "确定性与可重复执行",
+                  "covered": true,
+                  "gameId": "deterministic-replay",
+                  "kind": "rule-runner"
+                },
+                {
+                  "lessonId": "1.2-lesson-7",
+                  "sourceUnitId": "1.2.1-unit-2",
+                  "title": "预测、生成与行动的边界",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-8",
+                  "sourceUnitId": "1.2.2-unit-1",
+                  "title": "自主性与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-9",
+                  "sourceUnitId": "1.2.2-unit-2",
+                  "title": "工具契约与最小行动权限",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-10",
+                  "sourceUnitId": "1.2.2-unit-3",
+                  "title": "交接与编排",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-11",
+                  "sourceUnitId": "1.2.3-unit-1",
+                  "title": "数据漂移与概念漂移",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-12",
+                  "sourceUnitId": "1.2.3-unit-2",
+                  "title": "监测基线与反馈闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.2-lesson-13",
+                  "sourceUnitId": "1.2.4-unit-1",
+                  "title": "工具分级与影子AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "lessons": [
+                {
+                  "lessonId": "1.3-lesson-1",
+                  "sourceUnitId": "1.3-lesson-1",
+                  "title": "提示工程",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-2",
+                  "sourceUnitId": "1.3-lesson-2",
+                  "title": "词元与上下文窗口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-3",
+                  "sourceUnitId": "1.3-lesson-3",
+                  "title": "检索增强生成 RAG",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-4",
+                  "sourceUnitId": "1.3-lesson-4",
+                  "title": "微调 Fine-tuning",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-5",
+                  "sourceUnitId": "1.3.1-unit-1",
+                  "title": "任务、上下文、约束与格式",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-6",
+                  "sourceUnitId": "1.3.1-unit-2",
+                  "title": "代表性样例与提示版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-7",
+                  "sourceUnitId": "1.3.2-unit-1",
+                  "title": "输入与输出共享预算",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-8",
+                  "sourceUnitId": "1.3.2-unit-2",
+                  "title": "相关性与信息位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-9",
+                  "sourceUnitId": "1.3.3-unit-1",
+                  "title": "RAG的检索与生成两道关",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "1.3-lesson-10",
+                  "sourceUnitId": "1.3.3-unit-2",
+                  "title": "微调与外部知识更新",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "sections": [
+            {
+              "id": "2.1",
+              "lessons": [
+                {
+                  "lessonId": "2.1-lesson-1",
+                  "sourceUnitId": "2.1-lesson-1",
+                  "title": "从业务问题到用例",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-2",
+                  "sourceUnitId": "2.1-lesson-2",
+                  "title": "自建、购买或合作",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-3",
+                  "sourceUnitId": "2.1-lesson-3",
+                  "title": "项目优先级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-4",
+                  "sourceUnitId": "2.1-lesson-4",
+                  "title": "什么时候不该用AI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-5",
+                  "sourceUnitId": "2.1-lesson-5",
+                  "title": "迁移与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-6",
+                  "sourceUnitId": "2.1.1-unit-1",
+                  "title": "问题、受益者与可观测结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-7",
+                  "sourceUnitId": "2.1.2-unit-1",
+                  "title": "自建、购买与合作的比较维度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-8",
+                  "sourceUnitId": "2.1.3-unit-1",
+                  "title": "价值、可行性与硬性约束",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-9",
+                  "sourceUnitId": "2.1.4-unit-1",
+                  "title": "不使用AI也是方案",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.1-lesson-10",
+                  "sourceUnitId": "2.1.5-unit-1",
+                  "title": "切换、回退与业务连续性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "2.2",
+              "lessons": [
+                {
+                  "lessonId": "2.2-lesson-1",
+                  "sourceUnitId": "2.2-lesson-1",
+                  "title": "有形与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-2",
+                  "sourceUnitId": "2.2-lesson-2",
+                  "title": "业务基线",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-3",
+                  "sourceUnitId": "2.2-lesson-3",
+                  "title": "收益与ROI",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-4",
+                  "sourceUnitId": "2.2-lesson-4",
+                  "title": "先导性指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-5",
+                  "sourceUnitId": "2.2-lesson-5",
+                  "title": "成本规划与优化",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-6",
+                  "sourceUnitId": "2.2.1-unit-1",
+                  "title": "结果指标与活动指标",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-7",
+                  "sourceUnitId": "2.2.1-unit-2",
+                  "title": "有形收益与无形收益",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-8",
+                  "sourceUnitId": "2.2.2-unit-1",
+                  "title": "可比较基线与归因",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-9",
+                  "sourceUnitId": "2.2.3-unit-1",
+                  "title": "ROI公式与核算边界",
+                  "covered": true,
+                  "gameId": "cash-roi-ledger",
+                  "kind": "cost-ledger"
+                },
+                {
+                  "lessonId": "2.2-lesson-10",
+                  "sourceUnitId": "2.2.3-unit-2",
+                  "title": "释放产能与现金节省",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-11",
+                  "sourceUnitId": "2.2.4-unit-1",
+                  "title": "先导信号与滞后结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.2-lesson-12",
+                  "sourceUnitId": "2.2.5-unit-1",
+                  "title": "全生命周期成本",
+                  "covered": true,
+                  "gameId": "volume-unit-cost-lab",
+                  "kind": "volume-simulator"
+                }
+              ]
+            },
+            {
+              "id": "2.3",
+              "lessons": [
+                {
+                  "lessonId": "2.3-lesson-1",
+                  "sourceUnitId": "2.3-lesson-1",
+                  "title": "竞争格局",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-2",
+                  "sourceUnitId": "2.3-lesson-2",
+                  "title": "业务模式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-3",
+                  "sourceUnitId": "2.3-lesson-3",
+                  "title": "可持续优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-4",
+                  "sourceUnitId": "2.3-lesson-4",
+                  "title": "投资与成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-5",
+                  "sourceUnitId": "2.3.1-unit-1",
+                  "title": "客户问题与竞争位置",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-6",
+                  "sourceUnitId": "2.3.2-unit-1",
+                  "title": "价值主张、交付与收益逻辑",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-7",
+                  "sourceUnitId": "2.3.3-unit-1",
+                  "title": "互补能力与学习闭环",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "2.3-lesson-8",
+                  "sourceUnitId": "2.3.4-unit-1",
+                  "title": "分阶段承诺与停止条件",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "sections": [
+            {
+              "id": "3.1",
+              "lessons": [
+                {
+                  "lessonId": "3.1-lesson-1",
+                  "sourceUnitId": "3.1-lesson-1",
+                  "title": "负责任的AI原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-2",
+                  "sourceUnitId": "3.1-lesson-2",
+                  "title": "目标冲突与取舍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-3",
+                  "sourceUnitId": "3.1-lesson-3",
+                  "title": "从设计时纳入治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-4",
+                  "sourceUnitId": "3.1-lesson-4",
+                  "title": "人工监督与升级",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-5",
+                  "sourceUnitId": "3.1.1-unit-1",
+                  "title": "公平性与分组表现",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-6",
+                  "sourceUnitId": "3.1.1-unit-2",
+                  "title": "可说明性与透明度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-7",
+                  "sourceUnitId": "3.1.1-unit-3",
+                  "title": "隐私、安全与稳健性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-8",
+                  "sourceUnitId": "3.1.2-unit-1",
+                  "title": "收益、影响与比例原则",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-9",
+                  "sourceUnitId": "3.1.3-unit-1",
+                  "title": "从用途定义开始设置保障",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.1-lesson-10",
+                  "sourceUnitId": "3.1.4-unit-1",
+                  "title": "复核能力与升级阈值",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.2",
+              "lessons": [
+                {
+                  "lessonId": "3.2-lesson-1",
+                  "sourceUnitId": "3.2-lesson-1",
+                  "title": "跨职能治理与问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-2",
+                  "sourceUnitId": "3.2-lesson-2",
+                  "title": "合规风险识别",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-3",
+                  "sourceUnitId": "3.2-lesson-3",
+                  "title": "访问控制与数据安全",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-4",
+                  "sourceUnitId": "3.2-lesson-4",
+                  "title": "AI风险分类",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-5",
+                  "sourceUnitId": "3.2.1-unit-1",
+                  "title": "负责执行与最终问责",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-6",
+                  "sourceUnitId": "3.2.2-unit-1",
+                  "title": "用途、资料与适用要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.2-lesson-7",
+                  "sourceUnitId": "3.2.3-unit-1",
+                  "title": "最小权限与检索前过滤",
+                  "covered": true,
+                  "gameId": "concept-permission-before-retrieval",
+                  "kind": "permission-gate"
+                },
+                {
+                  "lessonId": "3.2-lesson-8",
+                  "sourceUnitId": "3.2.4-unit-1",
+                  "title": "按影响分配治理力度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "3.3",
+              "lessons": [
+                {
+                  "lessonId": "3.3-lesson-1",
+                  "sourceUnitId": "3.3-lesson-1",
+                  "title": "生产监控与事件处理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-2",
+                  "sourceUnitId": "3.3-lesson-2",
+                  "title": "生命周期中的偏差",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-3",
+                  "sourceUnitId": "3.3-lesson-3",
+                  "title": "有害内容与知识产权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-4",
+                  "sourceUnitId": "3.3-lesson-4",
+                  "title": "幻觉与可靠性",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-5",
+                  "sourceUnitId": "3.3.1-unit-1",
+                  "title": "检测、限制、调查与恢复",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-6",
+                  "sourceUnitId": "3.3.2-unit-1",
+                  "title": "采样、标注、目标与部署",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-7",
+                  "sourceUnitId": "3.3.3-unit-1",
+                  "title": "来源授权、输出用途与有害内容",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "3.3-lesson-8",
+                  "sourceUnitId": "3.3.4-unit-1",
+                  "title": "证据支持与不确定性",
+                  "covered": true,
+                  "gameId": "concept-claim-version-evidence",
+                  "kind": "evidence-board"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "sections": [
+            {
+              "id": "4.1",
+              "lessons": [
+                {
+                  "lessonId": "4.1-lesson-1",
+                  "sourceUnitId": "4.1-lesson-1",
+                  "title": "组织准备度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-2",
+                  "sourceUnitId": "4.1-lesson-2",
+                  "title": "AI成熟度",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-3",
+                  "sourceUnitId": "4.1-lesson-3",
+                  "title": "能力差距",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-4",
+                  "sourceUnitId": "4.1-lesson-4",
+                  "title": "发展路线与投入顺序",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-5",
+                  "sourceUnitId": "4.1.1-unit-1",
+                  "title": "领导、数据、文化、技术与治理",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-6",
+                  "sourceUnitId": "4.1.2-unit-1",
+                  "title": "探索、实验与可持续运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-7",
+                  "sourceUnitId": "4.1.3-unit-1",
+                  "title": "区分技能、流程、技术与权限缺口",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.1-lesson-8",
+                  "sourceUnitId": "4.1.4-unit-1",
+                  "title": "依赖关系与阶段成果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.2",
+              "lessons": [
+                {
+                  "lessonId": "4.2-lesson-1",
+                  "sourceUnitId": "4.2-lesson-1",
+                  "title": "数据准备与孤岛",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-2",
+                  "sourceUnitId": "4.2-lesson-2",
+                  "title": "数据策略与所有权",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-3",
+                  "sourceUnitId": "4.2-lesson-3",
+                  "title": "基础设施要求",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-4",
+                  "sourceUnitId": "4.2.1-unit-1",
+                  "title": "质量维度与数据契约",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-5",
+                  "sourceUnitId": "4.2.2-unit-1",
+                  "title": "所有者、血缘与版本",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.2-lesson-6",
+                  "sourceUnitId": "4.2.3-unit-1",
+                  "title": "延迟、容量、可用性与运营",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.3",
+              "lessons": [
+                {
+                  "lessonId": "4.3-lesson-1",
+                  "sourceUnitId": "4.3-lesson-1",
+                  "title": "高管支持与AI倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-2",
+                  "sourceUnitId": "4.3-lesson-2",
+                  "title": "跨职能团队",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-3",
+                  "sourceUnitId": "4.3-lesson-3",
+                  "title": "透明沟通",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-4",
+                  "sourceUnitId": "4.3-lesson-4",
+                  "title": "文化障碍",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-5",
+                  "sourceUnitId": "4.3-lesson-5",
+                  "title": "员工培养",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-6",
+                  "sourceUnitId": "4.3-lesson-6",
+                  "title": "角色转变与人的优势",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-7",
+                  "sourceUnitId": "4.3.1-unit-1",
+                  "title": "赞助者与业务倡导者",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-8",
+                  "sourceUnitId": "4.3.2-unit-1",
+                  "title": "业务、技术与监督角色",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-9",
+                  "sourceUnitId": "4.3.3-unit-1",
+                  "title": "事实、未知、岗位影响与反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-10",
+                  "sourceUnitId": "4.3.4-unit-1",
+                  "title": "安全试验与问题反馈",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-11",
+                  "sourceUnitId": "4.3.5-unit-1",
+                  "title": "从会操作到能判断",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.3-lesson-12",
+                  "sourceUnitId": "4.3.6-unit-1",
+                  "title": "判断、同理心与责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            },
+            {
+              "id": "4.4",
+              "lessons": [
+                {
+                  "lessonId": "4.4-lesson-1",
+                  "sourceUnitId": "4.4-lesson-1",
+                  "title": "迭代式转型",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-2",
+                  "sourceUnitId": "4.4-lesson-2",
+                  "title": "从短期成果到扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-3",
+                  "sourceUnitId": "4.4-lesson-3",
+                  "title": "卓越中心 COE",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-4",
+                  "sourceUnitId": "4.4-lesson-4",
+                  "title": "持续反馈与价值跟踪",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-5",
+                  "sourceUnitId": "4.4-lesson-5",
+                  "title": "试点转生产",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-6",
+                  "sourceUnitId": "4.4-lesson-6",
+                  "title": "全企业推广",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-7",
+                  "sourceUnitId": "4.4.1-unit-1",
+                  "title": "构想、实验、启动与扩展",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-8",
+                  "sourceUnitId": "4.4.2-unit-1",
+                  "title": "试点代表性与迁移条件",
+                  "covered": true,
+                  "gameId": "concept-pilot-transfer-investigation",
+                  "kind": "evidence-board"
+                },
+                {
+                  "lessonId": "4.4-lesson-9",
+                  "sourceUnitId": "4.4.3-unit-1",
+                  "title": "COE与业务责任",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-10",
+                  "sourceUnitId": "4.4.4-unit-1",
+                  "title": "采用、质量、风险、成本与结果",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                },
+                {
+                  "lessonId": "4.4-lesson-11",
+                  "sourceUnitId": "4.4.5-unit-1",
+                  "title": "值守、告警、回退与变更",
+                  "covered": true,
+                  "gameId": "concept-operational-handover-rehearsal",
+                  "kind": "runbook-rehearsal"
+                },
+                {
+                  "lessonId": "4.4-lesson-12",
+                  "sourceUnitId": "4.4.6-unit-1",
+                  "title": "性能、连续性、培训与支持",
+                  "covered": false,
+                  "gameId": null,
+                  "kind": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

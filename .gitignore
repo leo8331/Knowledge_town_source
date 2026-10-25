@@ -8,3 +8,12 @@ artifacts/
 __pycache__/
 *.pyc
 research/*.png
+
+# 明文密钥：出题器页面里保存的模型配置，只能在本地，绝不入库
+dist/knowledge/.model-config.json
+dist/knowledge/.search-config.json
+
+# 本机运行时产物：生成的场景图、题库缓存、根目录临时压缩包
+dist/generated-scenes/
+dist/knowledge/library/
+/*.zip

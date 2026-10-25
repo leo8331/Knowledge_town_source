@@ -1,5 +1,21 @@
 # B 教学逻辑专项报告 · revision5
 
+## 2026-10-23 截图请求复核与交接增量
+
+截图中的文字仅作为问题证据，不执行其中的英文代码输入要求。现有B5替代产物与独立反馈补充已满足本次教学侧要求，本轮未重写冻结教学包，也未将历史题重新加入必做流程。复核先沿用 `packages/learning-design/revision5-feedback-plan.md` 的专项计划，核对实际替代、诊断、登记与独立评审后运行验收。
+
+截图原题 `repair-mapping` 的旧答案为 input=history、output=forecast、eventA=infer、eventB=train；截图中前两项已对，A/B填反。B5用 `inspect-model-work` 的业务资料/估计/参数变化判断替代机械输入。旧课程仍使用原题时，可选已审 `candidates/playtest-fix/decision-task.js` 作自然语言操作适配：beginLegacy保留四项原选择，判定按项目解释，A未更新参数属于推理，B根据样本调整参数属于训练；只修改学习者主动更正的项目。两条接入路线不能混为新B5掌握记录。
+
+四章全面审查结果仍为139单元、38节及原13节；323个引导/独立活动均有目标、项目定位解释和知识回看指针。70项被替换单元与原13节的活动、旧答案及签名见 `packages/learning-design/candidates/feedback-v5/reviewed/replacement-register.v5.json`；逐节保留/修改/删除及理由见 `packages/learning-design/generated/B-section-audit.v5.md`。完整教学链为 `generated/teaching-logic.v5.json` 与 `generated/legacy-teaching-logic.v5.json`，不是只交改题建议。
+
+本次实际重新执行：`node scripts/test-module.cjs design` 39/39；`node scripts/check-contracts.cjs` PASS；`node --test tests/pipeline-contracts.test.cjs packages/learning-design/candidates/playtest-fix/decision-task.test.cjs` 16/16（契约9、旧题适配7），全部0失败。未重新生成冻结产物。不同模型gpt-6-astra既有评审PASS记录分别为 `authored/feedback-review.v5.json` 与 `candidates/playtest-fix/review.json`；本轮没有源码变更，未冒称新增模型评审或真实浏览器验收。
+
+D/C接入要求：按 `packages/learning-design/C-feedback-handoff.v5.md` 校验主B5/补充摘要，再显示逐项message、reason及对应知识入口；回看返回不得清草稿。相同题目的错误订正保留正确项；已替换情境的旧代码草稿只读归档，不自动翻译或继承新题通过。按实际整节activity签名隔离不兼容记录，保留找到、收藏、归档及无关进度；不要全档重置。知识自由回看，学习活动按先修解锁，帮助后的订正不冒充独立应用，正式90%要求不变。旧题适配必须匹配完整baseline，不能只按同名ID接管其它题。
+
+本轮变更仅本报告。输入仍为冻结A3增强知识包，教学输出revision5/schemaVersion1，独立反馈补充revision5及旧题候选schemaVersion1；没有共享接口变更。当前分支main、检查时HEAD `039861f0e7aebf5a53cc8f48282485987847d6c3`，B无新增提交，不表示该HEAD为B提交。页面渲染、知识入口点击、实际保存/刷新和触屏仍需D/C在最终集成验证；B没有修改游戏、dist、服务或联系其他对话。
+
+交接棒：截图接线修复台已纳入专项，取消用户端代码抄写；A推理/B训练逐项定位，正确项与旧草稿保留策略明确。全四章323活动及70单元/13节替换登记可追溯，本次39+9+7测试通过。请D按本报告和C接入说明集成并完成真实页面验收。
+
 ## D集中集成：最小接入顺序与适配边界（2026-10-22）
 
 本次仅汇总说明，无生成、无新审计、无冻结文件修改。账户刚读usedPercent67、剩余33%，未触发10%。主B5已冻结；精确诊断是**另行评审的独立候选补充**，并未纳入主manifest的成员摘要，不能因文件名带v5就自动混装。

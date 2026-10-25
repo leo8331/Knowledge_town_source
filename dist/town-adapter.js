@@ -28,6 +28,7 @@ renderNPCs=function(){$('villagers').innerHTML=people.map((p,i)=>{const r=zoneIn
 render=function(){if($('fieldNote'))$('fieldNote').hidden=true;A.session(state);renderHUD();renderLoot();renderPlants();};
 function renderAmbientScene(){
  if(typeof TownAmbient!=='undefined')TownAmbient.render(state.zone,$('world'),$('ambientScene'));
+ if(typeof TownLandmarkMotion!=='undefined')TownLandmarkMotion.render(state.zone,$('world'));
 }
 renderWorld=function(){renderAmbientScene();const z=zoneInfo();$('worldArt').src=`assets/world-${state.zone}.webp`;$('worldArt').alt=z.name+'，可以拖动、放大并操作场景物件';renderNPCs();render();};
 changeZone=function(zone){if(!CAT.zones[zone])return;close();state.zone=zone;clearTimeout(hintTimer);$('hintRing').hidden=true;renderWorld();resetCamera();save();toast('来到'+zoneInfo().name+'。知识委托、背包和成长记录继续累积。');};

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "candidateRevision": 1,
+  "status": "isolated-not-integrated",
+  "knowledge": {
+    "packHash": "1b31c336a5ddcfd0a78e22d581102c1d293b3cf835a72124d99cb2344f7c8f80",
+    "units": [
+      {
+        "id": "1.1-lesson-3",
+        "objectiveIds": [
+          "skill-1.1.1"
+        ],
+        "title": {
+          "zh": "训练 Training",
+          "en": "Training"
+        },
+        "category": {
+          "zh": "模型与运行机制",
+          "en": "Models and operations"
+        },
+        "explanation": {
+          "zh": "训练利用已有样本调整模型参数，使模型学习数据中的模式。训练效果好不代表对新数据一定表现好，需要独立验证。",
+          "en": "Training uses existing examples to adjust model parameters so the model learns patterns in data. Good training performance does not guarantee good performance on new data; independent validation is needed."
+        },
+        "examples": [
+          {
+            "zh": "用过去的订单记录学习需求规律，之后用未参与训练的时段检验。",
+            "en": "Learn demand patterns from past order records, then evaluate on a period not used in training."
+          }
+        ],
+        "misconceptions": [],
+        "prerequisiteIds": [
+          "1.1-lesson-2"
+        ],
+        "status": "supported",
+        "evidence": [
+          {
+            "materialId": "reviewed-primary-sources-r3",
+            "locator": "UTF16:5824-5903",
+            "quote": "In machine learning, learning involves adjusting the parameters of an ML model."
+          },
+          {
+            "materialId": "reviewed-primary-sources-r3",
+            "locator": "UTF16:2852-2919",
+            "quote": "models should not be evaluated on the same data they're trained on."
+          }
+        ]
+      },
+      {
+        "id": "1.1-lesson-12",
+        "objectiveIds": [
+          "skill-1.1.5"
+        ],
+        "title": {
+          "zh": "历史数据与泛化",
+          "en": "Historical data and generalization"
+        },
+        "category": {
+          "zh": "验证与泛化",
+          "en": "Evaluation and generalization"
+        },
+        "explanation": {
+          "zh": "历史数据反映过去的条件。要用独立数据检验模型能否处理未见情况，并留意未来环境与历史数据是否不同。",
+          "en": "Historical data reflects past conditions. Use independent data to test whether a model can handle unseen cases, and watch for differences between future conditions and historical data."
+        },
+        "examples": [
+          {
+            "zh": "用过去节日销量训练的模型，遇到新的促销方式时仍需监测。",
+            "en": "A model trained on past holiday sales still needs monitoring when new promotion methods are introduced."
+          }
+        ],
+        "misconceptions": [],
+        "prerequisiteIds": [
+          "1.1-lesson-3"
+        ],
+        "status": "supported",
+        "evidence": [
+          {
+            "materialId": "reviewed-primary-sources-r3",
+            "locator": "UTF16:4237-4369",
+            "quote": "degradation of machine learning model performance due to changes in data or in the relationships between input and output variables."
+          },
+          {
+            "materialId": "reviewed-primary-sources-r3",
+            "locator": "UTF16:2852-2919",
+            "quote": "models should not be evaluated on the same data they're trained on."
+          }
+        ]
+      },
+      {
+        "id": "1.1-lesson-13",
+        "objectiveIds": [
+          "skill-1.1.5"
+        ],
+        "title": {
+          "zh": "训练集与验证",
+          "en": "Training data and validation"
+        },
+        "category": {
+          "zh": "验证与泛化",
+          "en": "Evaluation and generalization"
+        },
+        "explanation": {
+          "zh": "训练数据用于学习，独立验证或测试用于检验未见样本的表现。把测试答案带入训练会让结果显得过于乐观。",
+          "en": "Training data is used for learning; independent validation or testing assesses performance on unseen examples. Bringing test answers into training makes results look overly optimistic."
+        },
+        "examples": [
+          {
+            "zh": "不要将上线测试工单的标准答案直接放进待评估模型的输入。",
+            "en": "Do not directly include the reference answers for deployment test tickets in the input to the model being evaluated."
+          }
+        ],
+        "misconceptions": [],
+        "prerequisiteIds": [
+          "1.1-lesson-3"
+        ],
+        "status": "supported",
+        "evidence": [
+          {
+            "materialId": "reviewed-primary-sources-r3",
+            "locator": "UTF16:2852-2919",
+            "quote": "models should not be evaluated on the same data they're trained on."
+          }
+        ]
+      }
+    ]
+  },
+  "activity": {
+    "version": 1,
+    "kind": "evidence-review-lab",
+    "title": {
+      "zh": "新仓库证据审查台",
+      "en": "Evidence review for a new warehouse"
+    },
+    "brief": {
+      "zh": "目标：从实际资料使用记录判断评价是否独立、环境是否匹配，再计算这批证据的正确率。先回看训练、泛化与验证知识；不是按文件名或已给的顺序操作。",
+      "en": "Goal: use data-use records to judge independence and context fit, then calculate accuracy on that evidence. Review training, generalization and evaluation first; do not follow file names or a supplied sequence."
+    },
+    "rounds": [
+      {
+        "id": "inspect-evaluation-records",
+        "type": "sort",
+        "skills": [
+          "1.1.1",
+          "1.1.5"
+        ],
+        "prompt": {
+          "zh": "演练：模型v7用于新仓库的同类包装检查。三份日志如下。把每份记录放到最直接反映其证据边界的区域；不是选最高分。甲：旧仓库同类任务，模型发布后才取样，18/20正确，未回流调整权重。乙：文件名“新仓库测试”，20/20正确；工程日志记载它的错误和人工答案用于更新v7权重。丙：新仓库同类任务，答案由评估员封存至v7冻结后，18/24正确；本次权重调整未接触这批资料或答案。所有数量及记录为本题演练条件。",
+          "en": "Exercise: model v7 will inspect comparable packaging at a new warehouse. Classify the evidence boundary in each log, rather than pick the highest score. A: the old warehouse, sampled after release, 18/20 correct, with no weight-update feedback. B: a file named new-warehouse test scores 20/20; engineering logs say its errors and human answers were used to update v7 weights. C: the new warehouse; evaluators sealed answers until v7 was frozen, scoring 18/24, and fitting did not access those records or answers. All counts and records are exercise assumptions."
+        },
+        "bins": [
+          {
+            "id": "fit",
+            "text": {
+              "zh": "已影响本次模型，不能证明未见表现",
+              "en": "Influenced this model; not unseen-case evidence"
+            }
+          },
+          {
+            "id": "context",
+            "text": {
+              "zh": "未影响本次模型，但环境证据还不匹配",
+              "en": "Did not influence this model, but context evidence differs"
+            }
+          },
+          {
+            "id": "evaluate",
+            "text": {
+              "zh": "可评价本次模型在目标用途的这批表现",
+              "en": "Can evaluate this model on these target-use records"
+            }
+          }
+        ],
+        "items": [
+          {
+            "id": "r",
+            "text": {
+              "zh": "丙记录",
+              "en": "Record C"
+            },
+            "target": "evaluate"
+          },
+          {
+            "id": "p",
+            "text": {
+              "zh": "甲记录",
+              "en": "Record A"
+            },
+            "target": "context"
+          },
+          {
+            "id": "q",
+            "text": {
+              "zh": "乙记录",
+              "en": "Record B"
+            },
+            "target": "fit"
+          }
+        ],
+        "reason": {
+          "zh": "先核对资料是否影响当前参数，再核对它能支持哪个环境的结论。文件名和最高分不能代替两项证据检查。甲可作旧环境对照，乙已影响当前权重，丙支持本题目标用途的一次独立评价。",
+          "en": "Check whether records affected the current parameters, then which context the evidence supports. File names and highest scores replace neither check. A is an old-context comparison, B affected current weights, and C supports one independent target-use evaluation."
+        }
+      },
+      {
+        "id": "calculate-and-limit-claim",
+        "type": "number",
+        "skills": [
+          "1.1.1",
+          "1.1.5"
+        ],
+        "prompt": {
+          "zh": "只核算刚确认可用于本次新仓库独立评价的那份记录：正确率百分数是多少，错误记录有多少条？不汇总三份日志，不取最高分。本题没有给上线阈值，计算结果不单独构成上线许可。",
+          "en": "For only the record just found suitable for this independent new-warehouse evaluation, enter accuracy as a percentage and the number of errors. Do not pool all three records or pick the highest score. No deployment threshold is given; this calculation alone is not deployment approval."
+        },
+        "fields": [
+          {
+            "id": "accuracy",
+            "label": {
+              "zh": "这批记录的正确率（百分数，不带%）",
+              "en": "Accuracy percentage for these records (without %)"
+            },
+            "expected": 75,
+            "tolerance": 0
+          },
+          {
+            "id": "errors",
+            "label": {
+              "zh": "这批记录的错误条数",
+              "en": "Errors in these records"
+            },
+            "expected": 6,
+            "tolerance": 0
+          }
+        ],
+        "reason": {
+          "zh": "丙18/24×100%=75%，24−18=6条错误。乙虽显示100%，但不能作本次独立证据；不能把甲乙丙混算，也不能凭75%编造一个未给出的上线阈值。",
+          "en": "C gives 18/24×100%=75% and 24−18=6 errors. B displays 100% but is not independent evidence here. Do not pool A/B/C or invent a deployment threshold from 75%."
+        }
+      }
+    ]
+  },
+  "sourceIds": [
+    "1.1-lesson-3",
+    "1.1-lesson-12",
+    "1.1-lesson-13"
+  ],
+  "sourceScopes": {
+    "legacyRoundId": "assemble-independent-check",
+    "b5UnitId": "1.1-lesson-13"
+  },
+  "feedback": {
+    "p": {
+      "zh": "甲虽然没参与权重调整，但记录来自旧仓库。它能提供旧环境的独立表现，不能单独代替新仓库证据。",
+      "en": "A was not used to adjust weights, but its records come from the old warehouse. It supports independent old-context performance, not the new warehouse on its own."
+    },
+    "q": {
+      "zh": "乙的误差被用来修改当前权重。即使文件叫“测试”，也不能再用它证明当前模型处理未见样本的表现。",
+      "en": "B errors were used to change the current weights. Calling the file test does not make it independent evidence for unseen cases."
+    },
+    "r": {
+      "zh": "丙来自目标新仓库，答案在模型版本冻结之后才向评估员开放，且未用于调整本次模型。它是本题中独立且用途相符的评价证据；仍不保证以后所有情况。",
+      "en": "C comes from the target warehouse; answers were released to evaluators after the model version was frozen and were not used to fit it. It is independent, use-relevant evidence here, not a guarantee for every future case."
+    }
+  },
+  "policy": {
+    "notDeploymentApproval": true,
+    "noGivenDeploymentThreshold": true,
+    "doNotReuseOldAnswers": true,
+    "noAutoMigration": true,
+    "formalPassThresholdUnchanged": 0.9
+  }
+}

@@ -163,7 +163,7 @@
 
 ## 产物与交接
 
-[集成说明](../../docs/INTEGRATION.md)；[A报告](A-knowledge.report.md)；[B原交付](B-learning-design.report.md)；[C报告](C-game.report.md)。B后续集成修订见packages/learning-design/generated/*.v3.json与authored/review-v3.json。
+[集成说明](../../archive/history/INTEGRATION-history.md)；[A报告](A-knowledge.report.md)；[B原交付](B-learning-design.report.md)；[C报告](C-game.report.md)。B后续集成修订见packages/learning-design/generated/*.v3.json与authored/review-v3.json。
 
 后续：用户填写API地址/模型/密钥后验证真实资料生成；任何新知识或教案修订继续通过来源、语义、可解性、旧存档与原入口门禁。密钥不进入网页或GitHub。
 

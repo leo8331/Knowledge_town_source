@@ -1,0 +1,27 @@
+# Render 蓝图：仓库连上 Render 后自动按这份配置建一个 Node Web Service。
+# 免费实例会在 15 分钟无访问后休眠，下一次打开需要等十几秒唤醒；游戏内置课程离线可玩，不受影响。
+services:
+  - type: web
+    name: knowledge-town
+    runtime: node
+    plan: free
+    region: singapore
+    startCommand: node server.cjs
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22.14.0
+      - key: TOWN_PUBLIC
+        value: "1"
+      - key: HOST
+        value: 0.0.0.0
+      - key: TOWN_RATE_LIMIT
+        value: "8"
+      # 下面三项在 Render 后台手动填，不要写进仓库
+      - key: API_BASE_URL
+        sync: false
+      - key: API_MODEL
+        sync: false
+      - key: API_KEY
+        sync: false

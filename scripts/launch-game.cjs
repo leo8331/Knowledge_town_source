@@ -11,7 +11,7 @@ async function probe(port){
 }
 async function ensureGameServer({port=DEFAULT_PORT,startServer}={}){
  port=portNumber(port);const status=await probe(port);
- if(status==='other')throw Error('Port '+port+' is occupied by another app or an older game build. Close that server and try again. The launcher keeps this port to preserve your browser save.');
+ if(status==='other')throw Error('Port '+port+' is occupied by another app or an older game build. Restart the server for this project, then try again. Do not close unrelated Node programs. The launcher keeps this port to preserve your browser save.');
  if(status==='game')return {port,url:'http://127.0.0.1:'+port+'/',reused:true};
  const child=(startServer||(()=>{
   const folder=path.join(root,'artifacts/runtime');fs.mkdirSync(folder,{recursive:true});const log=fs.openSync(path.join(folder,'launcher.log'),'a');
@@ -25,7 +25,8 @@ async function main(args=process.argv.slice(2)){
  const at=args.indexOf('--port'),port=at<0?DEFAULT_PORT:portNumber(args[at+1]),result=await ensureGameServer({port});console.log((result.reused?'Game already running: ':'Game started: ')+result.url);
  if(!args.includes('--no-open')){
   if(process.platform!=='win32')throw Error('Open '+result.url+' in your browser. Automatic opening is supported on Windows.');
-  const browser=cp.spawn('rundll32.exe',['url.dll,FileProtocolHandler',result.url],{windowsHide:true,stdio:'ignore'});await new Promise((resolve,reject)=>{browser.once('error',reject);browser.once('close',code=>code===0?resolve():reject(Error('Open '+result.url+' in your browser.')));});
+  const target=args.includes('--game')?result.url:result.url;
+  const browser=cp.spawn('rundll32.exe',['url.dll,FileProtocolHandler',target],{windowsHide:true,stdio:'ignore'});await new Promise((resolve,reject)=>{browser.once('error',reject);browser.once('close',code=>code===0?resolve():reject(Error('Open '+target+' in your browser.')));});
  }
  return result;
 }

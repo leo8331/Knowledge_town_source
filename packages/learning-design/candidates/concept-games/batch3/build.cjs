@@ -1,0 +1,18 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),B=require('../bindings.cjs'),E=require('../engine.js');
+function build(){
+ const crypto=require('node:crypto'),aPath=path.resolve(__dirname,'../../../../knowledge/candidates/concept-games/batch2.v1.json');
+ if(crypto.createHash('sha256').update(fs.readFileSync(aPath)).digest('hex')!=='da7ee4ad331ec492452a7c47abccc4ed1529215d134a69722181556d7cde6c25')throw Error('Reviewed A exercise snapshot changed');
+ const base=require('../staging/catalog.json'),pack=require('../../../../course-compiler/enrich-aib.cjs').enrichedAib().knowledgePack;
+ if(B.hash(pack)!==base.knowledge.hash)throw Error('Frozen knowledge changed');
+ const defs=[...require('./finance-definitions.cjs'),...require('./governance-definitions.cjs')],sources=B.catalogSources(),units=new Map(pack.units.map(u=>[u.id,u]));
+ const games=JSON.parse(JSON.stringify(base.games));
+ for(const def of defs){const u=units.get(def.sourceUnitId);if(!u||games.some(g=>g.sourceUnitId===u.id))throw Error('Missing or duplicate concept '+def.sourceUnitId);const ids=[],seen=new Set();function visit(id){if(seen.has(id))return;seen.add(id);const item=units.get(id);if(!item)throw Error('Unknown prerequisite '+id);item.prerequisiteIds.forEach(visit);ids.push(id);}visit(u.id);
+  const bindings=sources.flatMap(s=>s.course.chapters.flatMap(ch=>ch.sections.flatMap(sec=>sec.lessons.filter(l=>l.sourceUnitId===u.id).map(l=>{const c=B.forLesson(s.course,l,base.knowledge.hash);delete c.knowledgeHash;return c;}))));if(!bindings.length)throw Error('No course bindings for '+u.id);
+  const d={schemaVersion:1,...def,revision:1,teaching:def.teaching||{title:u.title,explanation:u.explanation,example:def.boundary},knowledge:base.knowledge,sourceUnits:ids.map(unitId=>{const x=units.get(unitId);return {unitId,unitHash:B.hash(x),title:x.title,explanation:x.explanation,evidence:x.evidence};}),bindings,collectionPolicy:{requiresRealDiscovery:true,requiresConceptGamePass:true,preserveExistingCollections:true,doesNotGrant:['automatic-favorite','section-application-pass','formal-exam-pass','independent-mastery']}};d.signature=E.signature(d);games.push(d);
+ }
+ return {...base,revision:3,status:'third-batch-candidate-not-integrated',engine:'ConceptGamesThird',dependencies:['../engine.js','../staging/learning-methods.js','../staging/content-workshops.js','../staging/engine.js','finance-games.js','governance-games.js','engine.js'],games};
+}
+function coverage(catalog){const E=require('./engine.js');return {schemaVersion:1,batch:3,knowledgeHash:catalog.knowledge.hash,sourceConceptsCovered:catalog.games.map(g=>g.sourceUnitId),courses:B.catalogSources().map(s=>({name:s.name,courseId:s.course.id,courseHash:B.hash(s.course),chapters:s.course.chapters.map(ch=>({id:ch.id,sections:ch.sections.map(sec=>({id:sec.id,lessons:sec.lessons.map(l=>{const d=E.resolve(catalog,B.forLesson(s.course,l,catalog.knowledge.hash));return {lessonId:l.id,sourceUnitId:l.sourceUnitId,title:l.title,covered:!!d,gameId:d?.id||null,kind:d?.kind||null};})}))}))}))};}
+if(require.main===module){const catalog=build(),map=coverage(catalog);fs.writeFileSync(path.join(__dirname,'catalog.json'),JSON.stringify(catalog,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'coverage.json'),JSON.stringify(map,null,2)+'\n');console.log(JSON.stringify({games:catalog.games.length,kinds:[...new Set(catalog.games.map(g=>g.kind))],bindings:catalog.games.reduce((n,g)=>n+g.bindings.length,0),catalogHash:B.hash(catalog)}));}
+module.exports={build,coverage};

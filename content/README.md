@@ -28,7 +28,7 @@ python scripts/build-aib-pack.py
 - `practice-english.tsv`：58组题目原料的英文版本，覆盖模板生成的200道题。
 - `interface-english.json`：小镇界面词条。
 
-课程构建会同步重建知识清单与语言数据。题库重建后执行 `node scripts/build-i18n.cjs`。详见[知识与交互设计](../docs/KNOWLEDGE_DESIGN.md)。
+课程构建会同步重建知识清单与语言数据。题库重建后执行 `node scripts/build-i18n.cjs`。详见[玩法与知识设计](../docs/GAME_GUIDE.md#知识与交互设计)。
 
 - `expanded-knowledge.tsv`：其余12个任务的63个细分中英文教学补充，包含定义、例子、易混边界与来源键。
 - `knowledge-sources.json`：补充资料的官方来源登记。

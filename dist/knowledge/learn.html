@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>学习文档 · 知识怎么整理、题型怎么用</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">学</span>
+    <div>
+      <h1>学习文档</h1>
+      <p>先看懂知识怎么整理，再看六种题型怎么用</p>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <a class="btn ghost" href="index.html">← 回到题库</a>
+  </div>
+</header>
+
+<main class="learn">
+  <nav class="toc">
+    <b>目录</b>
+    <a href="#why">0. 为什么知识会“散”</a>
+    <a href="#how">1. 知识怎么整理（五步）</a>
+    <a href="#types">2. 六种题型分别考什么</a>
+    <a href="#rule">3. 出题的四条硬规矩</a>
+    <a href="#check">4. 学完自测</a>
+    <a href="#faq">5. 常见问题</a>
+  </nav>
+
+  <article class="doc">
+    <section id="why">
+      <h2>0. 为什么知识会“散”</h2>
+      <p>散不是因为题少，是因为<strong>题和题之间没有共同的落点</strong>。同一份材料出了 100 道题，如果每道题各自考一句话，读完只记住 100 个碎片；如果 100 道题落在 8 个知识点上，读完记住的是 8 条能用的判断。</p>
+      <p>判断题库有没有结构，只看一件事：<strong>能不能说出「这份题库一共讲几个知识点」</strong>。说不出来，就是散。</p>
+      <div class="callout">
+        <b>本项目的一条硬规则</b>
+        <p>每道题必须带 <code>point</code>（知识点）。整批题只允许 3–8 个 <code>point</code>，必须复用。一道题一个 <code>point</code>，等于没有结构。</p>
+      </div>
+    </section>
+
+    <section id="how">
+      <h2>1. 知识怎么整理（五步）</h2>
+      <ol class="steps-doc">
+        <li>
+          <b>定主线</b>
+          <p>一个课题只留一条主线，写成一句能验收的话。例如「需求预测怎么落地」这条主线是“先让口径对得上，再谈模型准不准”。主线超过一条，后面所有题都会摇摆。</p>
+        </li>
+        <li>
+          <b>切知识点</b>
+          <p>把材料切成 3–8 个知识点，每个 4–12 字、名词短语、能一眼核对：<code>数据口径一致性</code> <code>节省要算全成本</code> <code>自动复核的判定链</code>。切不动就说明材料还不够，先补材料，别硬出题。</p>
+        </li>
+        <li>
+          <b>一个知识点，多种题型</b>
+          <p>同一个知识点，用单选考“是什么”、用排序考“先后”、用数值考“算一遍”、用分类考“算不算”。<strong>同一个知识点被不同题型反复考，才记得住</strong>——这是“题型”的作用，不是凑数量。</p>
+        </li>
+        <li>
+          <b>留依据，也留缺口</b>
+          <p>每道题带 <code>quote</code>（材料原句）用于人工核对；材料撑不住的地方写进 <code>gaps</code>，而不是编一个答案填上。没有 <code>quote</code> 的题，页面会标“无资料依据”。</p>
+        </li>
+        <li>
+          <b>按结构维护</b>
+          <p>看题库先看“知识骨架”（几个知识点、各几道题）；某个知识点题太少就按题型补题，某个知识点重复太多就按题型删题。题量不是目标，<strong>知识点覆盖率</strong>才是。</p>
+        </li>
+      </ol>
+      <div class="callout ok">
+        <b>验收口径</b>
+        <p>每份题库都能回答三个问题：① 讲几个知识点？② 每个知识点有几种题型？③ 哪条结论没有资料依据？</p>
+      </div>
+    </section>
+
+    <section id="types">
+      <h2>2. 六种题型分别考什么</h2>
+      <p>六种题型对应六种“会用”的程度。只看单选会“认得”，做到数值才叫“会算”。</p>
+
+      <div class="type-card">
+        <h3><span class="tag single">单选</span> 认得这个说法</h3>
+        <p class="use">用在：定义、辨析、单点事实。最容易出，也是保底题型。</p>
+        <div class="sample">
+          <p class="q">做需求预测，第一步最该确认什么？</p>
+          <div class="opt correct"><span class="mark">✓</span>历史记录是否与业务目标相关、口径一致</div>
+          <div class="opt"><span class="mark"></span>先挑一个看起来最先进的模型</div>
+        </div>
+        <p class="tip">干扰项必须与正确答案同类同级。出现“以上都不对”“不知道”，这题就废了。</p>
+      </div>
+
+      <div class="type-card">
+        <h3><span class="tag multi">多选</span> 找齐所有条件</h3>
+        <p class="use">用在：必做清单、并列条件、组合要求。漏选和多选都算错。</p>
+        <div class="sample">
+          <p class="q">评估“省了多少钱”时必须算进去的项有哪些？</p>
+          <div class="opt correct"><span class="mark">✓</span>人工复核耗时</div>
+          <div class="opt correct"><span class="mark">✓</span>返工与修订</div>
+          <div class="opt"><span class="mark"></span>服务器风扇的噪音</div>
+        </div>
+        <p class="tip">正确答案至少两条，否则它就退化成单选了。</p>
+      </div>
+
+      <div class="type-card">
+        <h3><span class="tag order">排序</span> 说清先后依赖</h3>
+        <p class="use">用在：流程、因果链、上线顺序。</p>
+        <div class="sample">
+          <ol class="steps">
+            <li>读取本笔订单金额</li>
+            <li>和阈值比一比</li>
+            <li>记下这一笔要不要复核</li>
+          </ol>
+        </div>
+        <p class="tip">至少三步。两步的“排序”其实是一道单选。</p>
+      </div>
+
+      <div class="type-card">
+        <h3><span class="tag sort">分类</span> 分清归属与边界</h3>
+        <p class="use">用在：概念归属、适用与不适用、层级关系。</p>
+        <div class="sample">
+          <div class="buckets">
+            <div class="bucket"><h4>有资料支撑</h4><div class="items"><span>阈值来自业务规则文档</span></div></div>
+            <div class="bucket"><h4>没有资料支撑</h4><div class="items"><span>模型一定比人工准</span></div></div>
+          </div>
+        </div>
+        <p class="tip">桶要 2–3 个，且必须互斥。放不进任何一个桶的条目，说明这个知识点还没想清楚。</p>
+      </div>
+
+      <div class="type-card">
+        <h3><span class="tag pair">连线</span> 建立概念之间的对应</h3>
+        <p class="use">用在：概念↔解释、工具↔用途、现象↔原因。</p>
+        <div class="sample">
+          <div class="pairs">
+            <div class="col left"><div class="cell"><i>1</i>算法</div><div class="cell"><i>2</i>模型</div></div>
+            <div class="col right"><div class="cell"><i>1</i>写下来的做事步骤，像菜谱</div><div class="cell"><i>2</i>照着方法用数据练出来的产物</div></div>
+          </div>
+        </div>
+        <p class="tip">至少三组。右列会被打乱，编号即正确配对。</p>
+      </div>
+
+      <div class="type-card">
+        <h3><span class="tag numeric">数值</span> 真的算一遍</h3>
+        <p class="use">用在：公式、净收益、阈值、成本。</p>
+        <div class="sample">
+          <p class="q">实际需求 3 件，预测备货 5 件，无期初库存，多备了几件？</p>
+          <div class="numeric"><input type="text" placeholder="填数字" disabled><span class="unit">件</span><span class="formula">5 − 3 = 2</span></div>
+        </div>
+        <p class="tip">必须带单位和计算式。算不出来的“数值题”，只是伪装成计算的概念题。</p>
+      </div>
+    </section>
+
+    <section id="rule">
+      <h2>3. 出题的四条硬规矩</h2>
+      <div class="grid-2">
+        <div class="rule"><b>只用材料里的事实</b><p>不补人名、数字、日期、结论。撑不住的写进缺口。</p></div>
+        <div class="rule"><b>每道题都有原文依据</b><p>带 <code>quote</code> 才收。核不上就是编的。</p></div>
+        <div class="rule"><b>一道题只考一个点</b><p>一句话拆成两题凑数量，是题库虚胖的来源。</p></div>
+        <div class="rule"><b>干扰项必须同类同级</b><p>干扰项越像，题才越有用；凑数项会把难度降成零。</p></div>
+      </div>
+    </section>
+
+    <section id="check">
+      <h2>4. 学完自测</h2>
+      <p>能答对下面三问，就可以自己看题库了。</p>
+      <div class="quiz">
+        <p><b>Q1</b> 一份 100 题的题库，如果每道题的 <code>point</code> 都不一样，问题出在哪？</p>
+        <p class="muted">→ 说明没有把知识切成可复用的知识点，题目之间没有共同落点，读完只剩碎片。</p>
+      </div>
+      <div class="quiz">
+        <p><b>Q2</b> 同一个知识点出了 5 道单选，还需要别的题型吗？</p>
+        <p class="muted">→ 需要。单选只证明“认得”；排序证明“知道先后”，数值证明“会算”。同点不同题型才是掌握。</p>
+      </div>
+      <div class="quiz">
+        <p><b>Q3</b> 页面标“无资料依据”的题该怎么处理？</p>
+        <p class="muted">→ 要么补材料重新出，要么删掉。不能留着当正确答案，它会污染整份题库的可信度。</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>5. 常见问题</h2>
+      <dl class="faq">
+        <dt>一份题库出多少题合适？</dt>
+        <dd>先按“知识点数 × 每点 3–5 题”估，通常 30–60 题够用。题量堆到 100 以上而知识点没增加，边际价值接近零。</dd>
+        <dt>题型数量怎么调？</dt>
+        <dd>左侧「题型数量」六个格子直接改，填 0 就不出这种题型，总题数自动跟着变。已经生成好的题库，可以在左上统计块用「＋ / －」按题型补题或删题，不用整库重跑。</dd>
+        <dt>“按知识点”和“按题型”两个视图有什么差别？</dt>
+        <dd>按题型看形式是否齐全；按知识点看结构是否完整——哪个知识点题少、哪个知识点被反复考，一眼能看出来。</dd>
+        <dt>题库名能改吗？</dt>
+        <dd>能。右侧题库标题旁的「重命名」，或左侧已保存题库列表里的 ✎，改完立即落盘。</dd>
+        <dt>为什么必须联网取材？</dt>
+        <dd>因为每道题都要有能核对的原文依据。只让模型凭记忆出题，答案看着对，但核不上、也没法验收。所以不粘贴材料时，系统会先用课题去检索、抓回网页正文当材料；抓不到就不出题，而不是编一份出来。题库顶部会列出「联网来源」，每道题的原文依据都能回溯到具体网页。</dd>
+      </dl>
+    </section>
+
+    <p class="back"><a class="btn primary" href="index.html">去生成 / 查看题库 →</a></p>
+  </article>
+</main>
+</body>
+</html>

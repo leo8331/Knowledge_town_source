@@ -1,0 +1,130 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自定义学习场景 · 拾知小镇</title><style> :root{--ink:#294236;--paper:#fffdf8;--green:#3f6252}*{box-sizing:border-box}body{margin:0;background:#182a22;color:#fff;font-family:"Microsoft YaHei",sans-serif}.shell{width:min(calc(100% - 28px),1180px);margin:auto}.top{height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}.top strong{font:700 21px Georgia,serif}.top small{display:block;color:#b9c9bd;font-size:10px;margin-top:3px}.nav{display:flex;gap:7px;flex-wrap:wrap}.nav a{padding:9px 12px;border-radius:999px;border:1px solid #ffffff55;background:#ffffff16;color:#fff;text-decoration:none;font-size:10px;font-weight:900}.scene{height:calc(100vh - 92px);min-height:590px;border-radius:28px;position:relative;overflow:hidden;background:#30483b;box-shadow:0 22px 80px #0c1712}.scene-bg{position:absolute;inset:0;background-position:center;background-size:cover;filter:saturate(.9);}.scene-shade{position:absolute;inset:0;background:linear-gradient(180deg,#10251a33,#10251a12 40%,#10251a88)}.hud{position:absolute;z-index:3;left:20px;right:20px;top:18px;display:flex;justify-content:space-between;gap:12px}.hud-card{padding:12px 15px;border-radius:16px;background:#14291fcc;border:1px solid #ffffff33;backdrop-filter:blur(10px)}.hud-card strong{display:block;font-size:13px}.hud-card span{display:block;margin-top:4px;color:#d2ded3;font-size:10px}.task-pin{position:absolute;z-index:4;transform:translate(-50%,-50%);width:74px;height:74px;border:0;border-radius:50%;background:#f5d58d;color:#425d48;box-shadow:0 0 0 8px #f5d58d38,0 12px 25px #172b1d88;cursor:pointer;font-size:27px}.task-pin small{display:block;font-size:9px;font-weight:900;white-space:nowrap;margin-top:5px}.task-pin.done{background:#8fc5a2;color:#fff}.task-panel{position:absolute;z-index:6;left:50%;bottom:20px;transform:translateX(-50%);width:min(620px,calc(100% - 32px));padding:20px;border-radius:22px;background:var(--paper);color:var(--ink);box-shadow:0 18px 60px #15281e99}.task-panel h2{margin:0 0 7px;font:700 24px Georgia,serif}.task-panel p{margin:0;color:#728076;font-size:11px;line-height:1.7}.options{display:grid;gap:8px;margin-top:13px}.option{border:1px solid #d4dfd3;background:#fff;color:#486253;border-radius:11px;padding:11px;text-align:left;cursor:pointer;font-size:10px;font-weight:900}.option:hover{background:#edf3e9}.feedback{display:none;margin-top:10px;padding:10px;border-radius:11px;background:#edf3e9;color:#55705c;font-size:10px;line-height:1.6}.feedback.show{display:block}.next{display:none;margin-top:10px;border:0;border-radius:11px;padding:10px 13px;background:var(--green);color:#fff;font-size:10px;font-weight:900;cursor:pointer}.next.show{display:inline-block}.empty{padding:80px 20px;text-align:center}.empty a{display:inline-block;margin-top:14px;padding:10px 13px;border-radius:11px;background:var(--green);color:#fff;text-decoration:none;font-size:11px;font-weight:900}.task-panel{max-height:calc(100% - 40px);overflow:auto}.drag-list{display:grid;gap:7px;margin-top:12px}.chip{display:flex;align-items:center;gap:8px;border:1px solid #d4dfd3;background:#fff;color:#486253;border-radius:11px;padding:10px 11px;font-size:11px;font-weight:700;cursor:pointer;text-align:left;width:100%}.chip.picked{background:#f6e7b3;border-color:#c8a35f}.chip.right{background:#dcecc9;border-color:#6f9a57}.chip.wrong{background:#f8dfd8;border-color:#c46a54}.chip .no{flex:0 0 22px;height:22px;border-radius:50%;background:#3f6252;color:#fff;display:grid;place-items:center;font-size:11px}.bucket{border:1px dashed #b9c49a;border-radius:12px;padding:8px;margin-top:8px;background:#f7f4e7}.bucket b{display:block;font-size:11px;color:#3f6252;margin-bottom:6px}.bucket .chip{margin:4px 0}.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}@media(max-width:560px){.row2{grid-template-columns:1fr}}.num{width:100%;padding:11px;border:1px solid #d4dfd3;border-radius:11px;font-size:14px;margin-top:10px}.unit{color:#728076;font-size:11px;margin-left:6px}.check{margin-top:10px;border:0;border-radius:11px;padding:10px 14px;background:#3f6252;color:#fff;font-size:11px;font-weight:900;cursor:pointer}.check[disabled]{opacity:.45;cursor:default}.hintline{margin-top:8px;font-size:10px;color:#728076}.explain{margin-top:8px;font-size:10px;color:#55705c;line-height:1.6}.quote{margin-top:6px;padding:6px 10px;border-left:3px solid #c8a35f;background:#f7f4e7;font-size:10px;color:#6b6a52;line-height:1.6}.banner{position:absolute;z-index:5;left:50%;top:78px;transform:translateX(-50%);padding:8px 14px;border-radius:999px;background:#14291fcc;border:1px solid #ffffff33;font-size:10px;color:#d2ded3}@media(max-width:600px){.top{height:auto;min-height:76px;padding:10px 0;align-items:flex-start}.top strong{font-size:17px}.nav{min-width:86px}.scene{min-height:760px}.task-pin{width:42px;height:42px;font-size:19px;box-shadow:0 0 0 5px #f5d58d38,0 8px 16px #172b1d88}.task-pin small{font-size:8px;margin-top:1px}.hud{left:10px;right:10px;gap:6px}.hud-card{padding:8px;flex:1;min-width:0}.hud-card strong{font-size:11px}.hud-card span{font-size:9px}.banner{top:105px;width:calc(100% - 32px);text-align:center;font-size:9px}.task-panel{padding:14px;bottom:12px}.task-panel h2{font-size:20px}}[hidden]{display:none!important}</style></head><body><header class="shell top"><div><strong id="title">自定义学习场景</strong><small>探索 · 发现 · 完成任务</small></div><nav class="nav"><a href="preview.html">返回预览</a><a href="workbench.html">返回工作台</a></nav></header><main class="shell"><section class="scene"><div id="bg" class="scene-bg"></div><div class="scene-shade"></div><div class="hud"><div class="hud-card"><strong id="progress">任务 0 / 3</strong><span>点击地图上的发光点，开始学习</span></div><div class="hud-card"><strong id="status">场景已准备</strong><span>完成三个任务点后解锁终点</span></div></div><button class="task-pin" style="left:25%;top:42%" data-task="0">✦<small>线索点</small></button><button class="task-pin" style="left:58%;top:34%" data-task="1">◆<small>判断点</small></button><button class="task-pin" style="left:76%;top:66%" data-task="2">✚<small>应用点</small></button><div id="panel" class="task-panel"><h2>开始探索这张学习地图</h2><p>选择一个发光任务点。每个点都会打开一个简短的学习任务，完成后会在地图上留下记录。</p></div></section></main><script src="kb-bridge.js"></script><script src="course-presentation.js"></script><script>
+const d=JSON.parse(localStorage.getItem('knowledgeTownPreview')||'{}');
+const scene=JSON.parse(localStorage.getItem('knowledgeTownScene')||'null');
+const bg=document.getElementById('bg'),panel=document.getElementById('panel'),progress=document.getElementById('progress'),status=document.getElementById('status');
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+document.getElementById('title').textContent=CoursePresentation.cleanTitle(d.title||scene?.title,(d.points||[])[0]||'学习课程');
+CoursePresentation.applyBackground(bg,d);
+const tasks=Array.isArray(scene?.tasks)?scene.tasks:[];
+const sceneEl=document.querySelector('.scene');
+document.querySelectorAll('.task-pin').forEach(x=>x.remove());
+const DONE_KEY='knowledgeTownDone:'+(scene?.source?.packId||d.title||'scene');
+const doneSet=new Set((()=>{try{return JSON.parse(localStorage.getItem(DONE_KEY)||'[]');}catch{return [];}})());
+function saveDone(){try{localStorage.setItem(DONE_KEY,JSON.stringify([...doneSet]));}catch{}}
+function refresh(){progress.textContent='任务 '+doneSet.size+' / '+tasks.length;status.textContent=!tasks.length?'等待重新生成':doneSet.size===tasks.length?'全部任务完成':doneSet.size?'正在探索':'场景已准备';}
+if(!tasks.length){panel.innerHTML='<h2>场景设计未完成</h2><p>这次没有拿到任务点，请回到工作台重试。不会使用默认任务冒充生成结果。</p>';status.textContent='等待重新生成';}
+if(scene?.source?.kind==='knowledge-base'){const b=document.createElement('div');b.className='banner';b.textContent='题目来自知识库出题器 · 共 '+tasks.length+' 个任务点';sceneEl.appendChild(b);}
+const R={};
+function finish(t,pin,ok,extra){
+ const f=document.getElementById('feedback');f.classList.add('show');f.innerHTML=ok?esc(t.correctFeedback||'回答正确，任务已记录。'):esc(t.wrongFeedback||'还不对，回看资料再试一次。');
+ if(!ok&&extra)f.innerHTML+='<div class="hintline">'+extra+'</div>';
+ if(ok){f.innerHTML+=(t.explain?'<div class="explain">'+esc(t.explain)+'</div>':'')+(t.quote?'<div class="quote">原文依据：'+esc(t.quote)+'</div>':'');
+  if(!doneSet.has(t.id||t.name)){doneSet.add(t.id||t.name);pin.classList.add('done');saveDone();refresh();}}
+ document.getElementById('next').classList.add('show');
+}
+R.choice=(t,pin,multi)=>{
+ const picked=new Set();const opts=(t.options||[]).map(String);
+ document.getElementById('body').innerHTML='<div class="options">'+opts.map((o,k)=>'<button class="option" data-i="'+k+'">'+esc(o)+'</button>').join('')+'</div>'+(multi?'<div class="hintline">可以选多个，选好后点「提交」。</div><button class="check" id="submit" disabled>提交</button>':'');
+ const items=[...panel.querySelectorAll('.option')];
+ items.forEach(el=>el.onclick=()=>{
+  const v=opts[+el.dataset.i];
+  if(!multi){const ok=KbBridge.grade(t,v);items.forEach(x=>x.disabled=true);el.style.background=ok?'#dcecc9':'#f8dfd8';finish(t,pin,ok);return;}
+  if(picked.has(v)){picked.delete(v);el.style.background='';}else{picked.add(v);el.style.background='#f6e7b3';}
+  document.getElementById('submit').disabled=!picked.size;
+ });
+ if(multi)document.getElementById('submit').onclick=()=>{
+  const ok=KbBridge.grade(t,[...picked]);items.forEach(x=>x.disabled=true);document.getElementById('submit').disabled=true;
+  const want=new Set(t.correct.map(String));items.forEach(el=>{const v=opts[+el.dataset.i];el.style.background=want.has(v)?'#dcecc9':picked.has(v)?'#f8dfd8':'';});
+  finish(t,pin,ok,ok?'':'绿色是应该选的，红色是多选了的。');
+ };
+};
+R.single=(t,pin)=>R.choice(t,pin,false);
+R.multi=(t,pin)=>R.choice(t,pin,true);
+R.legacy=(t,pin)=>{
+ const opts=(t.options||[]).map(String);
+ document.getElementById('body').innerHTML='<div class="options">'+opts.map((o,k)=>'<button class="option" data-i="'+k+'">'+esc(o)+'</button>').join('')+'</div>';
+ panel.querySelectorAll('.option').forEach(o=>o.onclick=()=>{finish(t,pin,Number(o.dataset.i)===Number(t.answer));});
+};
+R.order=(t,pin)=>{
+ let pool=[...t.items],seq=[];
+ const draw=()=>{
+  document.getElementById('body').innerHTML='<div class="hintline">按正确顺序依次点击（点已选的可以撤回）：</div><div class="drag-list">'+seq.map((v,i)=>'<button class="chip picked" data-un="'+i+'"><span class="no">'+(i+1)+'</span>'+esc(v)+'</button>').join('')+'</div><div class="drag-list">'+pool.map((v,i)=>'<button class="chip" data-add="'+i+'">'+esc(v)+'</button>').join('')+'</div><button class="check" id="submit" '+(pool.length?'disabled':'')+'>提交顺序</button>';
+  panel.querySelectorAll('[data-add]').forEach(el=>el.onclick=()=>{seq.push(pool.splice(+el.dataset.add,1)[0]);draw();});
+  panel.querySelectorAll('[data-un]').forEach(el=>el.onclick=()=>{pool.push(seq.splice(+el.dataset.un,1)[0]);draw();});
+  document.getElementById('submit').onclick=()=>{
+   const ok=KbBridge.grade(t,seq),det=KbBridge.detail(t,seq);
+   if(ok){panel.querySelectorAll('.chip').forEach(x=>{x.classList.add('right');x.disabled=true;});document.getElementById('submit').disabled=true;finish(t,pin,true);return;}
+   const bad=det.map((g,i)=>g?-1:i+1).filter(i=>i>0);
+   panel.querySelectorAll('[data-un]').forEach((el,i)=>el.classList.add(det[i]?'right':'wrong'));
+   finish(t,pin,false,'第 '+bad.join('、')+' 位还不对。点已选的可以撤回，再调一下。');
+  };
+ };draw();
+};
+R.sort=(t,pin)=>{
+ const placed={};let held=null;
+ const draw=()=>{
+  const free=t.items.filter(i=>!placed[i]);
+  document.getElementById('body').innerHTML='<div class="hintline">先点一个条目，再点它该去的类别：</div><div class="drag-list">'+free.map((i,k)=>'<button class="chip'+(held===i?' picked':'')+'" data-item="'+t.items.indexOf(i)+'">'+esc(i)+'</button>').join('')+'</div>'+t.categories.map((c,ci)=>'<div class="bucket" data-cat="'+ci+'"><b>'+esc(c)+'</b>'+t.items.filter(i=>placed[i]===c).map(i=>'<button class="chip" data-back="'+t.items.indexOf(i)+'">'+esc(i)+'</button>').join('')+'</div>').join('')+'<button class="check" id="submit" '+(free.length?'disabled':'')+'>提交分类</button>';
+  panel.querySelectorAll('[data-item]').forEach(el=>el.onclick=()=>{held=t.items[+el.dataset.item];draw();});
+  panel.querySelectorAll('.bucket').forEach(el=>el.onclick=e=>{if(e.target.closest('[data-back]'))return;if(!held)return;placed[held]=t.categories[+el.dataset.cat];held=null;draw();});
+  panel.querySelectorAll('[data-back]').forEach(el=>el.onclick=e=>{e.stopPropagation();delete placed[t.items[+el.dataset.back]];draw();});
+  document.getElementById('submit').onclick=()=>{
+   const ok=KbBridge.grade(t,placed);
+   if(ok){panel.querySelectorAll('.bucket .chip').forEach(x=>{x.classList.add('right');x.disabled=true;});document.getElementById('submit').disabled=true;finish(t,pin,true);return;}
+   const bad=t.items.filter(i=>placed[i]!==t.correct[i]);
+   panel.querySelectorAll('[data-back]').forEach(el=>{const i=t.items[+el.dataset.back];el.classList.add(placed[i]===t.correct[i]?'right':'wrong');});
+   finish(t,pin,false,'放错了 '+bad.length+' 个（红色）。点它可以拿出来重放。');
+  };
+ };draw();
+};
+R.pair=(t,pin)=>{
+ const made={};let left=null;
+ const draw=()=>{
+  const usedR=new Set(Object.values(made));
+  document.getElementById('body').innerHTML='<div class="hintline">先点左边，再点右边与它配成一对（点已配的可以拆开）：</div><div class="row2"><div class="drag-list">'+t.lefts.map((l,i)=>'<button class="chip'+(left===l?' picked':'')+(made[l]?' right':'')+'" data-l="'+i+'">'+esc(l)+(made[l]?' ⇄ '+esc(made[l]):'')+'</button>').join('')+'</div><div class="drag-list">'+t.rights.map((r,i)=>'<button class="chip" data-r="'+i+'" '+(usedR.has(r)?'disabled':'')+'>'+esc(r)+'</button>').join('')+'</div></div><button class="check" id="submit" '+(Object.keys(made).length<t.lefts.length?'disabled':'')+'>提交连线</button>';
+  panel.querySelectorAll('[data-l]').forEach(el=>el.onclick=()=>{const l=t.lefts[+el.dataset.l];if(made[l]){delete made[l];left=null;}else left=l;draw();});
+  panel.querySelectorAll('[data-r]').forEach(el=>el.onclick=()=>{if(!left)return;made[left]=t.rights[+el.dataset.r];left=null;draw();});
+  document.getElementById('submit').onclick=()=>{
+   const ok=KbBridge.grade(t,made);
+   if(ok){panel.querySelectorAll('.chip').forEach(x=>x.disabled=true);document.getElementById('submit').disabled=true;finish(t,pin,true);return;}
+   const det=KbBridge.detail(t,made);
+   panel.querySelectorAll('[data-l]').forEach((el,i)=>{el.classList.remove('right');el.classList.add(det[i]?'right':'wrong');});
+   finish(t,pin,false,'有 '+det.filter(x=>!x).length+' 对配错了（红色）。点它拆开重配。');
+  };
+ };draw();
+};
+R.numeric=(t,pin)=>{
+ document.getElementById('body').innerHTML='<div><input class="num" id="ans" inputmode="decimal" placeholder="输入一个数字"><span class="unit">'+esc(t.unit||'')+'</span></div><button class="check" id="submit" disabled>提交</button>';
+ const input=document.getElementById('ans'),sub=document.getElementById('submit');
+ input.oninput=()=>{sub.disabled=!input.value.trim();};
+ const go=()=>{const ok=KbBridge.grade(t,input.value);if(ok){input.disabled=true;sub.disabled=true;}finish(t,pin,ok,ok?'':(t.formula?'提示：'+esc(t.formula):'再算一次，注意单位：'+esc(t.unit||'')));};
+ sub.onclick=go;input.onkeydown=e=>{if(e.key==='Enter'&&!sub.disabled)go();};
+};
+function open(t,pin){
+ panel.hidden=false;
+ panel.innerHTML='<h2>'+esc(t.name||'学习任务')+'</h2><p>'+esc(t.prompt||'完成这项任务。')+'</p><div id="body"></div><div id="feedback" class="feedback" role="status"></div><button id="next" class="next">返回地图继续探索</button>';
+ const kind=t.type&&R[t.type]?t.type:'legacy';R[kind](t,pin);
+ document.getElementById('next').onclick=()=>{if(doneSet.size===tasks.length){panel.innerHTML='<h2>全部任务完成</h2><p>你已完成这份课程的 '+tasks.length+' 个任务。进度已保存，可以返回预览，或点任务点再次复习。</p>';status.textContent='终点已解锁：课程探索完成';}else{panel.hidden=true;}};
+}
+for(const t of tasks){
+ const pin=document.createElement('button');pin.className='task-pin';pin.style.left=(Number(t.x)||25)+'%';pin.style.top=(Number(t.y)||35)+'%';
+ const mark={single:'✦',multi:'✦',order:'⇅',sort:'▤',pair:'⇄',numeric:'＃'}[t.type]||'✦';
+ const TL={single:'单选',multi:'多选',order:'排序',sort:'分类',pair:'连线',numeric:'数值'};
+ pin.innerHTML=mark+'<small>'+esc(TL[t.type]?TL[t.type]+' '+(tasks.indexOf(t)+1):String(t.name||'任务点').slice(0,10))+'</small>';
+ pin.title=String(t.name||'');pin.setAttribute('aria-label','任务 '+(tasks.indexOf(t)+1)+' · '+(TL[t.type]||'任务')+'：'+String(t.name||''));
+ if(doneSet.has(t.id||t.name))pin.classList.add('done');
+ pin.onclick=()=>open(t,pin);sceneEl.appendChild(pin);
+}
+(()=>{const spans=document.querySelectorAll('.hud-card span');if(spans[1]&&tasks.length)spans[1].textContent='完成全部 '+tasks.length+' 个任务点后解锁终点';})();
+function layoutPins(){
+ const pins=[...sceneEl.querySelectorAll('.task-pin')],width=sceneEl.clientWidth,narrow=width<600,columns=narrow?2:4,rows=Math.ceil(pins.length/columns);
+ sceneEl.style.minHeight=Math.max(narrow?760:590,rows*88+280)+'px';
+ const height=sceneEl.clientHeight,gap=narrow?62:100;
+ const positions=tasks.map(t=>({x:Math.max(10,Math.min(90,Number(t.x)||25)),y:Math.max(25,Math.min(70,Number(t.y)||35))}));
+ const overlap=positions.some((p,i)=>positions.slice(0,i).some(q=>Math.abs(p.x-q.x)*width/100<gap&&Math.abs(p.y-q.y)*height/100<gap));
+ pins.forEach((pin,i)=>{const grid=narrow||overlap;pin.style.left=(grid?8+(i%columns+.5)*84/columns:positions[i].x)+'%';pin.style.top=(grid?25+(rows>1?Math.floor(i/columns)*45/(rows-1):20):positions[i].y)+'%';});
+}
+layoutPins();window.addEventListener('resize',layoutPins);
+refresh();
+if(tasks.length&&doneSet.size===tasks.length)panel.innerHTML='<h2>全部任务完成</h2><p>这份课程的 '+tasks.length+' 个任务已完成，进度已恢复。可以点击任务点再次复习。</p>';
+</script></body></html>

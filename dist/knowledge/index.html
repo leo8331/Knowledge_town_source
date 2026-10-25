@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>知识库 · 出题与拆解</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">知</span>
+    <div>
+      <h1>知识库</h1>
+      <p>一个课题 → 知识点骨架 → 六种题型</p>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span class="api-state" id="apiState">检查中…</span>
+    <a class="btn ghost" href="learn.html">学习文档</a>
+    <button id="toggleApi" class="btn ghost">API 配置</button>
+    <button id="loadDemo" class="btn ghost">载入示例题库</button>
+  </div>
+</header>
+
+<section class="api-panel" id="apiPanel" hidden>
+  <div class="api-grid">
+    <label>接口地址<input id="apiBaseUrl" type="url" placeholder="https://api.openai.com/v1" autocomplete="off"></label>
+    <label>模型名称<input id="apiModel" placeholder="gpt-4o-mini" autocomplete="off"></label>
+    <label>API 密钥<input id="apiKey" type="password" placeholder="sk-…" autocomplete="off"></label>
+  </div>
+  <div class="api-actions">
+    <button id="saveApi" class="btn primary">保存并启用</button>
+    <button id="clearApi" class="btn ghost">清除</button>
+    <span class="hint">兼容 OpenAI Chat Completions。密钥只写到本机 <code>知识库/.model-config.json</code>，不回传到页面。</span>
+  </div>
+
+  <hr class="api-sep">
+  <div class="api-grid">
+    <label>联网搜索服务<select id="searchProvider"></select></label>
+    <label>搜索密钥<input id="searchKey" type="password" placeholder="tvly-… / serper 的 key" autocomplete="off"></label>
+  </div>
+  <div class="api-actions">
+    <button id="saveSearch" class="btn primary">保存搜索配置</button>
+    <button id="clearSearch" class="btn ghost">清除</button>
+    <span class="hint" id="searchHint">出题必须联网取材：没有粘贴材料时，系统会用课题去搜，把网页正文当材料再出题，保证每道题的原文依据核得上。</span>
+  </div>
+</section>
+
+<section id="workbenchBar" class="workbench-bar" hidden><div><strong id="workbenchContext">工作台第 3 步</strong><p id="workbenchPackHint"></p></div><div class="workbench-actions"><a class="btn ghost" href="../workbench.html?step=2">返回工作台</a><button id="useWorkbenchPack" class="btn primary" disabled>使用此题库，继续预览 →</button></div></section>
+<main class="layout">
+  <aside class="panel">
+    <h2>出题</h2><label class="field">出题模型<select id="courseProfileSelect" disabled><option value="">使用本页 API 配置</option></select></label><p class="hint">可选模型中心已保存的配置，也可选“使用本页 API 配置”，在右上角配置接口。与工作台第一步场景模型独立。</p>
+    <label class="field">课题<input id="topic" placeholder="例如：需求预测怎么落地"></label>
+    <label class="field">材料（留空则自动联网取材）<textarea id="materials" rows="6" placeholder="粘贴讲义、笔记、网页正文…&#10;留空时，系统会用课题去互联网检索、抓正文当材料，再依据它出题（需要先配好搜索密钥）。"></textarea></label>
+    <div class="material-actions">
+      <input id="searchQuery" class="mini-input" placeholder="检索词（留空=课题）" autocomplete="off">
+      <button id="research" class="btn ghost mini">联网取材</button>
+    </div>
+    <p class="hint" id="sourceHint"></p>
+    <label class="quick">受众与难度
+      <select id="audience" class="mini-input" style="width:auto">
+        <option value="kid6-9">小朋友 6–9 岁</option>
+        <option value="kid10-12" selected>小朋友 10–12 岁</option>
+        <option value="teen13">青少年 13 岁以上</option>
+        <option value="pro">专业 / 成人（调查·认证·培训）</option>
+      </select>
+    </label>
+    <label class="quick"><input id="quick" type="checkbox" checked> 快速模式（小批量、材料截 1800 字）</label>
+    <label class="quick">总题数 <input id="target" type="number" min="1" max="300" value="100" step="1"> 道（>10 会自动分批串行跑）</label>
+
+    <h2 class="gap-top">题型数量</h2>
+    <div class="quota" id="quota"></div>
+    <div class="quota-foot">
+      <span class="hint">合计 <b id="quotaTotal">0</b> 道 · 填 0 = 不出这种题型</span>
+      <button id="quotaReset" class="btn ghost mini">按默认配比</button>
+    </div>
+
+    <button id="generate" class="btn primary wide" style="margin-top:14px">生成题库</button>
+    <p class="status" id="status" role="status"></p>
+
+    <div class="stats" id="stats"></div>
+
+    <h2 class="gap-top">已保存题库</h2>
+    <div id="library" class="library"></div>
+  </aside>
+
+  <section class="content">
+    <div id="jobs" class="jobs" hidden></div>
+
+    <div class="pack-bar" id="packBar" hidden>
+      <div class="pack-title-wrap">
+        <h3 id="packTitle">未命名题库</h3>
+        <button id="renamePack" class="btn ghost mini" title="改题库名">重命名</button>
+      </div>
+      <p class="pack-summary" id="packSummary"></p>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" id="filters"></div>
+      <div class="meta">
+        <div class="views" id="views">
+          <button class="chip on" data-view="type">按题型</button>
+          <button class="chip" data-view="point">按知识点</button>
+        </div>
+        <span id="meta"></span>
+        <button id="savePack" class="btn" hidden>保存到题库</button>
+      </div>
+    </div>
+
+    <div id="outline" class="outline" hidden></div>
+    <div id="sources" class="sources" hidden></div>
+    <div id="gaps" class="gaps" hidden></div>
+    <div id="audit" class="audit" hidden></div>
+    <div id="cards" class="cards"></div>
+    <div id="empty" class="empty">
+      <p>还没有题库。</p>
+      <p class="muted">点右上「载入示例题库」先看六种题型长什么样，或填个课题点「生成题库」。第一次用先读 <a href="learn.html">学习文档</a>。</p>
+    </div>
+  </section>
+</main>
+
+<script src="workbench-link.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
