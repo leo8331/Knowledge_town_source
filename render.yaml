@@ -18,10 +18,15 @@ services:
         value: 0.0.0.0
       - key: TOWN_RATE_LIMIT
         value: "8"
-      # 下面三项在 Render 后台手动填，不要写进仓库
+      # 下面几项在 Render 后台手动填，不要写进仓库（sync: false = 蓝图只声明名字，值由你在面板填）
       - key: API_BASE_URL
         sync: false
       - key: API_MODEL
         sync: false
       - key: API_KEY
+        sync: false
+      # 出题器「联网取材」用的搜索服务：腾讯元宝搜索 WSA
+      - key: KB_SEARCH_PROVIDER
+        value: wsa
+      - key: KB_SEARCH_KEY
         sync: false
