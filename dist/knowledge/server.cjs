@@ -70,10 +70,12 @@ function readSearchConfig() {
 }
 function currentSearchConfig() {
   const stored = readSearchConfig();
-  const provider = stored?.provider || Search.DEFAULT_PROVIDER;
+  /* 容器里页面写的配置会随实例重启消失，所以环境变量优先兜底：KB_SEARCH_PROVIDER / KB_SEARCH_KEY */
+  const envProvider = String(process.env.KB_SEARCH_PROVIDER || '').trim();
+  const provider = stored?.provider || (Search.PROVIDERS[envProvider] ? envProvider : Search.DEFAULT_PROVIDER);
   const meta = Search.PROVIDERS[provider] || Search.PROVIDERS[Search.DEFAULT_PROVIDER];
-  const apiKey = stored?.apiKey || '';
-  return { provider, key: apiKey, configured: meta.needsKey ? !!apiKey : true, needsKey: !!meta.needsKey };
+  const apiKey = stored?.apiKey || String(process.env.KB_SEARCH_KEY || '').trim();
+  return { provider, key: apiKey, configured: meta.needsKey ? !!apiKey : true, needsKey: !!meta.needsKey, fromEnv: !stored?.apiKey && !!apiKey };
 }
 
 /* ── 调模型 ── */

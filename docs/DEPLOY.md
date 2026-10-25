@@ -68,6 +68,7 @@ Railway / Fly.io 直接把仓库连上即可，平台会给 `PORT`，服务端�
 | `TOWN_RATE_LIMIT` | `5` | 公网模式下 `course-jobs`、`scene-design`、`image-generation`、`kb/api/generate` 每 IP 每 10 分钟的调用上限；本机模式不限 |
 | `API_BASE_URL` / `API_MODEL` / `API_KEY` | 空 | 课程生成用模型；填了就出现在模型中心「服务器环境变量」这一条里 |
 | `IMAGE_API_BASE_URL` / `IMAGE_API_MODEL` / `IMAGE_API_KEY` | 空 | 出图用，留空沿用文本接口 |
+| `KB_SEARCH_PROVIDER` / `KB_SEARCH_KEY` | `wsa` / 空 | 出题器「联网取材」用的搜索服务（腾讯元宝搜索 WSA，也可换 tavily/serper/brave/bing）。填了容器重启也不丢；不填也能在出题器页面里临时保存 |
 | `API_CHUNK_CHARS` / `API_MAX_CHUNKS` / `API_MAX_OUTPUT_TOKENS` / `API_TIMEOUT_MS` | 12000 / 40 / 6000 / 90000 | 长资料分片与超时 |
 | `TOWN_PROFILE_FILE` | `artifacts/runtime/model-profiles.json` | 模型中心保存的配置位置，挂盘时指向 `/data/...` |
 | `KB_DATA_DIR` | `dist/knowledge` | 出题器题库与配置目录，挂盘时指向 `/data/kb` |
